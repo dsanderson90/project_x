@@ -1,10 +1,9 @@
 /** @jsx jsx */
-
 import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Nav from "../components/Nav.js"
 import Header from "./header"
 import { Container, Flex } from "theme-ui"
 const Layout = ({ children }) => {
@@ -19,6 +18,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
+
     <Container
     py={4}
     px={8}

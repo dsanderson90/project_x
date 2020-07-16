@@ -1,23 +1,34 @@
 export default {
-  colors: {
-    text: "#333",
-    background: "#fff",
-    primary: "#111",
-    secondary: "#ff6347",
-  },
-  fonts: {
-    body: "Hammersmith One, sans-serif",
-    heading: "system-ui, sans-serif",
-    monospace: "Menlo, monospace",
-  },
-  fontWeights: {
-    body: 400,
-    heading: 700,
-    bold: 700,
-  },
-  lineHeights: {
-    body: 1.5,
-    heading: 1.125,
-  },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
-}
+
+    colors: {
+      text: "#EFF2C0",
+      background: "#313639",
+      primary: "#53B3CB",
+      secondary: "#ff6347",
+      mint: "#E5FFF0"
+    },
+    borders: {
+      solid: "1px #fff"
+    },
+    fonts: {
+      body: "'Anonymous Pro', monospace",
+      heading: "'Jost', sans-serif",
+    },
+    fontWeights: {
+      body: 400,
+      heading: 700,
+      bold: 700,
+    },
+    lineHeights: {
+      body: 1.5,
+      heading: 1.125,
+    },
+    images: {
+      avatar: {
+        width: 96,
+        height: 96,
+        borderRadius: 99999,
+      },
+    },
+    fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
+  }
