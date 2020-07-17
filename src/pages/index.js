@@ -9,23 +9,21 @@ import RadioNav from "../components/RadioNav"
 import { Reveal } from "react-reveal"
 const IndexPage = () => (
   <Layout>
-    <Flex sx={{ flexDirection: "column", fontFamily: "body" }}>
       <Reveal top>
-        <Box
+        <Flex
           sx={{
             color: "white",
-            textAlign: "center",
-            fontSize: "14px",
+            justifyContent: "center",
+            fontSize: ["14px", null, null, "20px"],
             letterSpacing: "2px",
             padding: "20px",
             borderBottom: "1px solid #E5FFF0",
-            margin: " 0 33%",
-            
-        
+            margin: [" 0 10%", null, null, " 0 33%"],
+ 
           }}
         >
           David Sanderson
-        </Box>
+        </Flex>
       </Reveal>
       <Reveal bottom>
         <Box
@@ -40,7 +38,6 @@ const IndexPage = () => (
         </Box>
       </Reveal>
       <RadioNav />
-    </Flex>
   </Layout>
 )
 
