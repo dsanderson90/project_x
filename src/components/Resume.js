@@ -3,6 +3,6 @@ import Display from "../components/Display"
 
 export const Resume = () => (
   <Display>
-    <h1>Resume Section</h1>
+    <h1>Resume</h1>
   </Display>
 )
