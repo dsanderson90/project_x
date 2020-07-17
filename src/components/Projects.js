@@ -1,3 +1,8 @@
 import React from "react"
-
-export const Projects = () => <div>Projects Section</div>
+import Display from "../components/Display"
+export const Projects = () => (
+  <Display
+  >
+    Projects Section
+  </Display>
+)

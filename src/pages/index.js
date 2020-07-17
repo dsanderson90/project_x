@@ -7,16 +7,19 @@ import { Snippets } from "../components/Snippets"
 import { Blog } from "../components/Blog"
 import { About } from "../components/About"
 import { Resume } from "../components/Resume"
+import { Projects } from "../components/Projects"
 const IndexPage = () => {
-  const [lookup, setLookup] = useState({
-    about: (
-      <About title="Hi I am David Sanderson!" content="I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to interesting problems." />
-    ),
-    resume: (
-      <Resume/>
-    )
-  })
-  const initialState = lookup["about"]
+  const [components, setComponents] = useState([
+    <About
+      title="Hi I am David Sanderson!"
+      content="I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to interesting problems."
+    />,
+    <Projects />,
+    <Resume />,
+    <Blog />,
+    <Snippets />,
+  ])
+  const initialState = components[0]
   const [section, setSection] = useState(initialState)
   const handleSetSection = title => {
     setSection(title)
@@ -56,8 +59,7 @@ const IndexPage = () => {
       </Fade>
       <RadioNav handleSetSection={handleSetSection} />
       <Fade bottom>
-          {section}
-
+        {components[0]}
       </Fade>
     </Layout>
   )
