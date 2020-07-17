@@ -2,17 +2,22 @@ import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import { Flex, Box } from "theme-ui"
 import RadioNav from "../components/RadioNav"
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade"
 import { Snippets } from "../components/Snippets"
 import { Blog } from "../components/Blog"
+import { About } from "../components/About"
 import { Resume } from "../components/Resume"
 const IndexPage = () => {
-  const lookup ={
-    "about": "Hi I am David Sanderson! I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to interesting problems."
-  }
-
+  const [lookup, setLookup] = useState({
+    about: (
+      <About title="Hi I am David Sanderson!" content="I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to interesting problems." />
+    ),
+    resume: (
+      <Resume/>
+    )
+  })
   const initialState = lookup["about"]
-  const [section, setSection] = useState(lookup["about"])
+  const [section, setSection] = useState(initialState)
   const handleSetSection = title => {
     setSection(title)
   }
@@ -32,7 +37,6 @@ const IndexPage = () => {
             letterSpacing: "2px",
             padding: "20px",
             borderBottom: "1px solid #E5FFF0",
-            margin: [" 0 10%", "null", "0 20%", " 0 33%"],
           }}
         >
           David Sanderson
@@ -52,11 +56,9 @@ const IndexPage = () => {
       </Fade>
       <RadioNav handleSetSection={handleSetSection} />
       <Fade bottom>
-
-      <Flex px={[1, 3, 5, 7]} mx={[2, null, null, null]} my={4} sx={{justifyContent: "center"}}>
-
-      {section}
-      </Flex>
+        <Flex sx={{ width: ['10%', '50%', '33%'], margin: "40px auto"}}>
+          {section}
+        </Flex>
       </Fade>
     </Layout>
   )

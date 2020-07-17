@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from "../components/Nav.js"
 import Header from "./header"
-import { Container, Flex, Link } from "theme-ui"
+import { Container, Flex, Link, Box } from "theme-ui"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -48,6 +48,7 @@ const Layout = ({ children }) => {
         <Link href="https://www.gatsbyjs.org">Gatsby</Link>,{" "}
         <Link href="https://www.gatsbyjs.org">Netlify</Link>, &{" "}
         <Link href="https://www.gatsbyjs.org">Theme-ui</Link>
+        <Box mt={4}>Developed by David.</Box>
       </footer>
     </Container>
   )
