@@ -21,12 +21,15 @@ const Layout = ({ children }) => {
     <Container
     px={3}
       sx={{
-        margin: "0",
+        margin: "0 auto",
         display: "flex",
         flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
         height: "100%",
         fontFamily: "body",
-        flex: "1 0 auto"
+        flex: "1 0 auto",
+        maxWidth: "1200px"
       }}
     >
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -37,6 +40,7 @@ const Layout = ({ children }) => {
           fontSize: ["12px", null, null, "14px"],
           textAlign: "center",
           flexShrink: "0",
+          
         }}
       >
         © {new Date().getFullYear()}, Built with

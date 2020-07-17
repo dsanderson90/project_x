@@ -53,7 +53,7 @@ const IndexPage = () => {
       <RadioNav handleSetSection={handleSetSection} />
       <Fade bottom>
 
-      <Flex my={4} sx={{justifyContent: "center", padding: ["0px 20px", "0px 40px", "0px 60px", "0px 120px"]}}>
+      <Flex px={[1, 3, 5, 7]} mx={[2, null, null, null]} my={4} sx={{justifyContent: "center"}}>
 
       {section}
       </Flex>
