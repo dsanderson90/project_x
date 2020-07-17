@@ -1,8 +1,11 @@
 import React from "react"
 import Display from "../components/Display"
+import LightSpeed from "react-reveal/LightSpeed"
 
 export const Snippets = () => (
-  <Display id="snippets">
+    <LightSpeed right>
+    <Display id="snippets">
     <h1>Snippets</h1>
-  </Display>
+    </Display>
+    </LightSpeed>
 )

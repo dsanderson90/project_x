@@ -9,15 +9,15 @@ import Fade from "react-reveal/Fade"
 
 export const About = ({ title, content }) => {
   return (
-    <Display>
     <Fade bottom>
+    <Display>
     <Jump delay={500}>
     <Swing delay={350}>
     <h1>{title}</h1>
     </Swing>
     </Jump>
     <p>{content}</p>
-    </Fade>
     </Display>
+    </Fade>
     )
 }
