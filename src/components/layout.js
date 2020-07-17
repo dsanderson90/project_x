@@ -19,7 +19,6 @@ const Layout = ({ children }) => {
 
   return (
     <Container
-    px={3}
       sx={{
         margin: "0 auto",
         display: "flex",

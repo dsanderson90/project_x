@@ -35,7 +35,7 @@ const IndexPage = () => {
             justifyContent: "center",
             fontSize: ["14px", null, null, "20px"],
             letterSpacing: "2px",
-            padding: "20px",
+            padding: "20px 0",
             borderBottom: "1px solid #E5FFF0",
           }}
         >
@@ -56,9 +56,8 @@ const IndexPage = () => {
       </Fade>
       <RadioNav handleSetSection={handleSetSection} />
       <Fade bottom>
-        <Flex sx={{ width: ['10%', '50%', '33%'], margin: "40px auto"}}>
           {section}
-        </Flex>
+
       </Fade>
     </Layout>
   )
