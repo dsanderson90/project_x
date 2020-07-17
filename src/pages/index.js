@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import { Flex, Box } from "theme-ui"
 import RadioNav from "../components/RadioNav"
-import { Reveal } from "react-reveal"
+import Fade from 'react-reveal/Fade';
 import { Snippets } from "../components/Snippets"
 import { Blog } from "../components/Blog"
 import { Resume } from "../components/Resume"
@@ -23,7 +23,7 @@ const IndexPage = () => {
   }, [section, setSection])
   return (
     <Layout>
-      <Reveal top>
+      <Fade top>
         <Flex
           sx={{
             color: "white",
@@ -32,13 +32,13 @@ const IndexPage = () => {
             letterSpacing: "2px",
             padding: "20px",
             borderBottom: "1px solid #E5FFF0",
-            margin: [" 0 10%", null, null, " 0 33%"],
+            margin: [" 0 10%", "null", "0 20%", " 0 33%"],
           }}
         >
           David Sanderson
         </Flex>
-      </Reveal>
-      <Reveal bottom>
+      </Fade>
+      <Fade bottom>
         <Box
           sx={{
             color: "white",
@@ -49,15 +49,15 @@ const IndexPage = () => {
         >
           Software Developer
         </Box>
-      </Reveal>
+      </Fade>
       <RadioNav handleSetSection={handleSetSection} />
-      <Reveal right>
+      <Fade bottom>
 
-      <Flex my={4} sx={{justifyContent: "center"}}>
+      <Flex my={4} sx={{justifyContent: "center", padding: ["0px 20px", "0px 40px", "0px 60px", "0px 120px"]}}>
 
       {section}
       </Flex>
-      </Reveal>
+      </Fade>
     </Layout>
   )
 }

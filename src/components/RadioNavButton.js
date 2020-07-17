@@ -43,7 +43,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
           marginRight: "20px",
           position: "relative",
           opacity: "0.6",
-          margin: ["0px 5px", null, null, "0px 20px"],
+          margin: ["0px 5px", null, "0px 10px", "0px 20px"],
           "::before": {
             content: title,
             display: "block",

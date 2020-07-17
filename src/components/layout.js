@@ -19,8 +19,9 @@ const Layout = ({ children }) => {
 
   return (
     <Container
-      px={[2, null, null, 8]}
+    px={3}
       sx={{
+        margin: "0",
         display: "flex",
         flexDirection: "column",
         height: "100%",
