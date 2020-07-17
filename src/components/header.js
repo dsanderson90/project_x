@@ -1,5 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-export default function Header({ children }) {
-  return <header>{children}</header>
+import Helmet from "react-helmet"
+export default function Header({ children, siteTitle, description }) {
+  return (
+    <header>
+      {" "}
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content={description}/>
+        <title>{siteTitle}</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
+      {children}
+    </header>
+  )
 }

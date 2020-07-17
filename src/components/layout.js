@@ -12,11 +12,12 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
   `)
-
+const {title, description } = data.site.siteMetadata
   return (
     <Container
       sx={{
@@ -31,7 +32,7 @@ const Layout = ({ children }) => {
         maxWidth: "1200px",
       }}
     >
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={title} description={description} />
 
       <main sx={{ flex: "1 0 auto" }}>{children}</main>
      <Footer/>
