@@ -4,6 +4,7 @@ import { jsx } from "theme-ui"
 const RadioNavButton = ({ title }) => {
   return (
     <label
+    className="hue-rotate"
       sx={{
         display: "flex",
         justifyContent: "flex-start",
@@ -42,8 +43,8 @@ const RadioNavButton = ({ title }) => {
             content: title,
             display: "block",
             width: "inherit",
-            color: "#E5FFF0",
-            fontSize: "32px",
+            color: "#FFF",
+            fontSize: ["13px", null, null, "32px"],
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",
@@ -57,8 +58,8 @@ const RadioNavButton = ({ title }) => {
             content: title,
             display: "block",
             width: "inherit",
-            color: "#F0F5FA",
-            fontSize: ["8px", null, null, "32px"],
+            color: "#FFF",
+            fontSize: ["13px", null, null, "26px"],
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",

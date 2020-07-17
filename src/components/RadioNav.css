@@ -1,7 +1,7 @@
 .dark {
   --primary: "#ff6347";
   --other: #53B3CB;
-
+ 
 }
 
 /* other states */
@@ -24,4 +24,14 @@ input:focus + .design::after,
 input:active + .design::after {
   opacity: 1;
   transform: scale(1.2);
+
+}
+
+.hue-rotate {
+  animation: hue-rotation 2s linear 0ms infinite!important;
+}
+
+@keyframes hue-rotation {
+  0% { filter: hue-rotate(0);  }
+  100% { filter: hue-rotate(360deg); }
 }
