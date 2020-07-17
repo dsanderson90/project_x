@@ -14,18 +14,10 @@ const Nav = () => {
       }}
     >
       <Fade right delay={300}>
-        <Box sx={{ margin: "20px 8px", color: "white" }}>
-          Rants
-        </Box>
-        <Box sx={{ margin: "20px 8px", color: "white" }}>
-          Projects
-        </Box>
-        <Box sx={{ margin: "20px 8px", color: "white" }}>
-         Snippets
-        </Box>
-        <Box sx={{ margin: "20px 8px", color: "white" }}>
-          Contact
-        </Box>
+        <Box sx={{ margin: "20px 8px", color: "white" }}>Rants</Box>
+        <Box sx={{ margin: "20px 8px", color: "white" }}>Projects</Box>
+        <Box sx={{ margin: "20px 8px", color: "white" }}>Snippets</Box>
+        <Box sx={{ margin: "20px 8px", color: "white" }}>Contact</Box>
       </Fade>
     </Flex>
   )

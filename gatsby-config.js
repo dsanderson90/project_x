@@ -5,7 +5,7 @@ module.exports = {
     author: `@_dsanderson`,
   },
   plugins: [
-    'gatsby-plugin-theme-ui',
+    "gatsby-plugin-theme-ui",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,12 +21,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Jost',
-            variants: ['300', '400', '700']
+            family: "Jost",
+            variants: ["300", "400", "700"],
           },
           {
             family: `Anonymous Pro`,
-            variants: [`400`, `700`]
+            variants: [`400`, `700`],
           },
         ],
       },

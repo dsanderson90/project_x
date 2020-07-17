@@ -1,19 +1,30 @@
 import React from "react"
 /** @jsx jsx */
-import { jsx, Box } from "theme-ui"
+import { jsx, Flex } from "theme-ui"
 import "./RadioNav.css"
 import RadioNavButton from "./RadioNavButton"
 const RadioNav = () => {
   return (
-      <Box className="container">
-        <section className="dark">
-          <RadioNavButton title="Test" />
-          <RadioNavButton title="Test" />
-          <RadioNavButton title="Test" />
-          <RadioNavButton title="Test" />
-          <RadioNavButton title="Test" />
-        </section>
-      </Box>
+    <Flex
+      sx={{ justifyContent: "center", alignItems: "center" }}
+      className="container"
+    >
+      <section
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          flexDirection: "row",
+          position: "relative",
+        }}
+        className="dark"
+      >
+        <RadioNavButton title='"projects"' />
+        <RadioNavButton title='"about"' />
+        <RadioNavButton title='"resume"' />
+        <RadioNavButton title='"blog"' />
+        <RadioNavButton title='"snippets"' />
+      </section>
+    </Flex>
   )
 }
 
