@@ -1,14 +1,28 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Card from "../components/Card"
 import { Flex, Box } from "theme-ui"
 import RadioNav from "../components/RadioNav"
 import { Reveal } from "react-reveal"
-const IndexPage = () => (
-  <Layout>
+import { Snippets } from "../components/Snippets"
+import { Blog } from "../components/Blog"
+import { Resume } from "../components/Resume"
+const IndexPage = () => {
+  const lookup ={
+    "about": "Hi I am David Sanderson! I am a software developer from Albuquerque New Mexico. I am passionate about design and engineering creative solutions to interesting problems."
+  }
+
+  const initialState = lookup["about"]
+  const [section, setSection] = useState(lookup["about"])
+  const handleSetSection = title => {
+    setSection(title)
+  }
+
+  useEffect(() => {
+    console.log(section)
+    return () => {}
+  }, [section, setSection])
+  return (
+    <Layout>
       <Reveal top>
         <Flex
           sx={{
@@ -19,7 +33,6 @@ const IndexPage = () => (
             padding: "20px",
             borderBottom: "1px solid #E5FFF0",
             margin: [" 0 10%", null, null, " 0 33%"],
- 
           }}
         >
           David Sanderson
@@ -37,8 +50,16 @@ const IndexPage = () => (
           Software Developer
         </Box>
       </Reveal>
-      <RadioNav />
-  </Layout>
-)
+      <RadioNav handleSetSection={handleSetSection} />
+      <Reveal right>
+
+      <Flex my={4} sx={{justifyContent: "center"}}>
+
+      {section}
+      </Flex>
+      </Reveal>
+    </Layout>
+  )
+}
 
 export default IndexPage

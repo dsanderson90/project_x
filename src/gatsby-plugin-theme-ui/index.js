@@ -11,8 +11,8 @@ export default {
     a: {
       color: "#ee99ff",
       fontFamily: "'Jost', sans-serif",
-      fontWeight: "700"
-    }
+      fontWeight: "700",
+    },
   },
   borders: {
     solid: "1px #fff",
@@ -39,7 +39,7 @@ export default {
   },
 
   links: {
-color: "red"
+    color: "red",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
 }

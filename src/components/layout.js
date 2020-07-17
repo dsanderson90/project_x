@@ -18,14 +18,31 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Container Centered container sx={{ fontFamily: "body"}}>
+    <Container
+      px={[2, null, null, 8]}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+        fontFamily: "body",
+        flex: "1 0 auto"
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <main>{children}</main>
-      <footer sx={{fontSize: ["12px", null, null, "14px"], textAlign: "center"}}>
+      <main sx={{ flex: "1 0 auto" }}>{children}</main>
+      <footer
+        sx={{
+          fontSize: ["12px", null, null, "14px"],
+          textAlign: "center",
+          flexShrink: "0",
+        }}
+      >
         © {new Date().getFullYear()}, Built with
         {` `}
-        <Link href="https://www.gatsbyjs.org">Gatsby</Link>, <Link href="https://www.gatsbyjs.org">Netlify</Link>, & <Link href="https://www.gatsbyjs.org">Theme-ui</Link>
+        <Link href="https://www.gatsbyjs.org">Gatsby</Link>,{" "}
+        <Link href="https://www.gatsbyjs.org">Netlify</Link>, &{" "}
+        <Link href="https://www.gatsbyjs.org">Theme-ui</Link>
       </footer>
     </Container>
   )

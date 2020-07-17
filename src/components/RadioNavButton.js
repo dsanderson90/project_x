@@ -1,13 +1,13 @@
 import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-const RadioNavButton = ({ title }) => {
-  const handleClick = (e) => {
-console.log(e.target.value, e.target.name)
+const RadioNavButton = ({ title, handleSetSection }) => {
+  const handleClick = e => {
+    handleSetSection(e.target.value)
   }
   return (
     <label
-    className="hue-rotate"
+      className="hue-rotate"
       sx={{
         display: "flex",
         justifyContent: "flex-start",
@@ -19,8 +19,8 @@ console.log(e.target.value, e.target.name)
       }}
     >
       <input
-      onClick={handleClick}
-      name={title}
+        onClick={handleClick}
+        name={title}
         value={title}
         type="radio"
         sx={{
@@ -75,9 +75,7 @@ console.log(e.target.value, e.target.name)
           },
         }}
       ></span>
-      <span
-        className="text"
-      ></span>
+      <span className="text"></span>
     </label>
   )
 }
