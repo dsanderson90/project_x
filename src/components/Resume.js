@@ -1,11 +1,11 @@
 import React from "react"
 import Display from "../components/Display"
-import LightSpeed from "react-reveal/LightSpeed"
+import Fade from "react-reveal/Fade"
 
 export const Resume = () => (
-    <LightSpeed right>
+    <Fade bottom>
     <Display>
     <h1>Resume</h1>
     </Display>
-    </LightSpeed>
+    </Fade>
 )

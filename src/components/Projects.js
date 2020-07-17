@@ -1,10 +1,10 @@
 import React from "react"
 import Display from "../components/Display"
-import LightSpeed from "react-reveal/LightSpeed"
+import Fade from "react-reveal/Fade"
 export const Projects = () => (
-    <LightSpeed left>
+    <Fade top>
   <Display>
   <h1>Projects</h1>
   </Display>
-  </LightSpeed>
+  </Fade>
 )
