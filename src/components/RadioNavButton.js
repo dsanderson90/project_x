@@ -13,7 +13,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
         justifyContent: "flex-start",
         alignItems: "center",
         flexWrap: "nowrap",
-        margin: "24px",
+        margin: "20px",
         cursor: "pointer",
         position: "relative",
       }}
