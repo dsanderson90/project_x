@@ -8,7 +8,7 @@ import { Blog } from "../components/Blog"
 import { Resume } from "../components/Resume"
 const IndexPage = () => {
   const lookup ={
-    "about": "Hi I am David Sanderson! I am a software developer from Albuquerque New Mexico. I am passionate about design and engineering creative solutions to interesting problems."
+    "about": "Hi I am David Sanderson! I am a software developer from Albuquerque, New Mexico. I enjoy music, design, and engineering creative solutions to interesting problems."
   }
 
   const initialState = lookup["about"]
