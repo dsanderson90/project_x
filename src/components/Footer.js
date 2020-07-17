@@ -3,6 +3,9 @@ import React from "react"
 import { jsx } from "theme-ui"
 import { Link, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
+import Zoom from 'react-reveal/Zoom';
+
+
 const Footer = () => {
   return (
     <footer
