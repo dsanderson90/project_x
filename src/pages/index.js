@@ -36,7 +36,7 @@ const IndexPage = () => (
             margin: "20px 0",
           }}
         >
-          Front End Developer
+          Software Developer
         </Box>
       </Reveal>
       <RadioNav />

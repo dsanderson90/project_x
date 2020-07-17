@@ -2,6 +2,9 @@ import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 const RadioNavButton = ({ title }) => {
+  const handleClick = (e) => {
+console.log(e.target.value, e.target.name)
+  }
   return (
     <label
     className="hue-rotate"
@@ -16,8 +19,10 @@ const RadioNavButton = ({ title }) => {
       }}
     >
       <input
+      onClick={handleClick}
+      name={title}
+        value={title}
         type="radio"
-        name="dark"
         sx={{
           opacity: "0",
           position: "absolute",
