@@ -1,3 +1,8 @@
 import React from "react"
+import Display from "../components/Display"
 
-export const Resume = () => <div>Resume Section</div>
+export const Resume = () => (
+  <Display>
+    <h1>Resume Section</h1>
+  </Display>
+)

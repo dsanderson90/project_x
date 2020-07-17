@@ -8,7 +8,7 @@ const Display = ({ children }) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: ["40px 80px", null, null, "40px 380px"],
+        margin: ["20px 40px", null, null, "40px 390px"],
       }}
     >
       {children}

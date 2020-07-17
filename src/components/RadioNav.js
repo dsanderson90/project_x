@@ -21,13 +21,27 @@ const RadioNav = ({ handleSetSection }) => {
         <RadioNavButton
           handleSetSection={handleSetSection}
           title='"projects"'
+          href="projects"
         />
-        <RadioNavButton handleSetSection={handleSetSection} title='"about"' />
-        <RadioNavButton handleSetSection={handleSetSection} title='"resume"' />
-        <RadioNavButton handleSetSection={handleSetSection} title='"blog"' />
+        <RadioNavButton
+          handleSetSection={handleSetSection}
+          href="about"
+          title='"about"'
+        />
+        <RadioNavButton
+          handleSetSection={handleSetSection}
+          href="resume"
+          title='"resume"'
+        />
+        <RadioNavButton
+          handleSetSection={handleSetSection}
+          href="blog"
+          title='"blog"'
+        />
         <RadioNavButton
           handleSetSection={handleSetSection}
           title='"snippets"'
+          href="snippets"
         />
       </section>
     </Flex>
