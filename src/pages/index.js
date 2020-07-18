@@ -4,7 +4,6 @@ import React, { useState } from "react"
 import { Flex, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
 
-
 import Layout from "../components/layout"
 import RadioNav from "../components/RadioNav"
 import { Snippets } from "../components/Snippets"
@@ -25,7 +24,7 @@ const IndexPage = () => {
     blog: <Blog />,
     snippets: <Snippets />,
   })
-  
+
   const initialState = "about"
   const [section, setSection] = useState(initialState)
   const handleSetSection = title => {

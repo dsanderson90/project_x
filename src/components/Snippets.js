@@ -1,11 +1,11 @@
 import React from "react"
-import Display from "../components/Display"
+import Display from "./Display"
 import Fade from "react-reveal/Fade"
 
 export const Snippets = () => (
-    <Fade top>
+  <Fade top>
     <Display>
-    <h1>Snippets</h1>
+      <h1>Snippets</h1>
     </Display>
-    </Fade>
+  </Fade>
 )

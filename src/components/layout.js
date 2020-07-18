@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Header siteTitle={title} description={description} />
-     <main sx={{ flex: "1 0 auto" }}>{children}</main>
+      <main sx={{ flex: "1 0 auto" }}>{children}</main>
       <Footer />
     </Container>
   )

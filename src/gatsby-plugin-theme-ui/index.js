@@ -37,7 +37,24 @@ export default {
       borderRadius: 99999,
     },
   },
-
+  buttons: {
+    primary: {
+      color: "background",
+      bg: "primary",
+      "&:hover": {
+        color: "text",
+      },
+      fontFamily: "'Anonymous Pro', monospace",
+    },
+    secondary: {
+      color: "background",
+      bg: "#ee99ff",
+      fontFamily: "'Anonymous Pro', monospace",
+      "&:hover": {
+        color: "text",
+      },
+    },
+  },
   links: {
     color: "red",
   },
