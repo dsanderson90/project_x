@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Flex, Button } from "theme-ui"
+import { Box, Flex, Button, Link } from "theme-ui"
 const ProjectCard = ({ title, tags, description, repo, url }) => {
   return (
     <Box
@@ -22,14 +22,18 @@ const ProjectCard = ({ title, tags, description, repo, url }) => {
       <p>{description}</p>
       <Flex sx={{ justifyContent: "flex-end" }}>
         {url && (
-          <Button p={1} my={2} mx={1}>
-            See Live
-          </Button>
+          <Link target="_blank" rel="noopenner noreferrer" href={url}>
+            <Button p={1} my={2} mx={1}>
+              See Live
+            </Button>
+          </Link>
         )}
         {repo && (
-          <Button p={1} my={2} mx={1} variant="secondary">
-            View Source
-          </Button>
+          <Link target="_blank" rel="noopenner noreferrer" href={repo}>
+            <Button p={1} my={2} mx={1} variant="secondary">
+              View Source
+            </Button>
+          </Link>
         )}
       </Flex>
     </Box>
