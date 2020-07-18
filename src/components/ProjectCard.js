@@ -18,7 +18,7 @@ const ProjectCard = ({ title, tags, description, repo, url }) => {
             </Button>
           ))}
       </Flex>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <p>{description}</p>
       <Flex sx={{ justifyContent: "flex-end" }}>
         {url && (

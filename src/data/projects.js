@@ -23,6 +23,15 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
+    img: "github-user-lookup.JPG",
+    title: "Rick and Morty API",
+    description: "GraphQL API for serving Rick and Morty quotes.",
+    url: "",
+    repo: "https://github.com/dsanderson90/RMGQL.API", // if no repo, the button will not show up
+    tags: ["C#", "ASP.NET", "GraphQL"],
+  },
+  {
+    id: uuidv4(),
     img: "create-react-app-emotion-tailwind-prettier.JPG",
     title: "create-react-app-emotion-tailwind-prettier",
     description:
