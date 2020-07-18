@@ -66,7 +66,7 @@ export const projectsData = [
   {
     id: uuidv4(),
     img: "activatenm-landing.jpg",
-    title: "Activate New Mexico Landing Page (Gatsby)",
+    title: "Activate New Mexico Landing Page",
     description:
       "Landing page for forthcoming Activate NM website. The landing page was built using GatsbyJS and React ParticlesJS. The final site is being built in WordPress.",
     url: "http://kindly-note.surge.sh/",
@@ -81,12 +81,12 @@ export const projectsData = [
       "Activate New Mexico (ActivateNM) is an Albuquerque-based start-up incubator/accelerator powered by CNM Ingenuity. During my tenure as Resident Web Developer, I collaborated Ruth Dove(Project Manager) and Adrian Tsosie(Graphic Designer) to redesign, rebrand, and revamp Activate NM's online presence with a new website built using WordPress.",
     url: "https://activatenm.com/",
     repo: "", // if no repo, the button will not show up
-    tags: ["Gatsby", "gatsby themes"],
+    tags: ["WordPress", "Genesis"],
   },
   {
     id: uuidv4(),
     img: "littlelions(1).jpg",
-    title: "Little Lions Learn (WordPress)",
+    title: "Little Lions Learn",
     description:
       "Little Lions Learn is an online language learning company that delivers high-quality, immersive second language instruction in Spanish and English for children between the ages of 4 and 13. I built this site as part of my residency at the start-up accelerator, ActivateNM. The site uses WordPress, the Genesis Framework and is integrated with Hubspot and WooCommerce.",
     url: "https://littlelionslearn.com",
