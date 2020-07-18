@@ -1,7 +1,7 @@
 import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-const RadioNavButton = ({ title, handleSetSection, href }) => {
+const RadioNavButton = ({ title, handleSetSection }) => {
   const handleClick = e => {
     handleSetSection(e.target.name)
   }
@@ -20,7 +20,7 @@ const RadioNavButton = ({ title, handleSetSection, href }) => {
     >
       <input
         onClick={handleClick}
-        name={href}
+        name={title}
         value={title}
         type="radio"
         sx={{
@@ -45,7 +45,7 @@ const RadioNavButton = ({ title, handleSetSection, href }) => {
           opacity: "0.6",
           margin: ["0px 5px", null, "0px 10px", "0px 20px"],
           "::before": {
-            content: title,
+            content: `"${title}"`,
             display: "block",
             width: "inherit",
             color: "#FFF",
@@ -60,7 +60,7 @@ const RadioNavButton = ({ title, handleSetSection, href }) => {
             transition: "0.3s",
           },
           "::after": {
-            content: title,
+            content: `"${title}"`,
             display: "block",
             width: "inherit",
             color: "#FFF",
