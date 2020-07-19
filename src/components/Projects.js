@@ -5,9 +5,11 @@ import ProjectCard from "./ProjectCard"
 import { projectsData } from "../data/projects"
 export const Projects = () => {
   const projects = projectsData.map((project, i) => {
-    if (i % 2 == 0) {
-      return (
-        <Fade>
+  let mirror = {
+    mirror: i % 2 == 0
+  }
+   return(
+        <Fade left {...mirror}>
           <ProjectCard
             key={project.id}
             title={project.title}
@@ -17,9 +19,7 @@ export const Projects = () => {
             url={project.url}
           />
         </Fade>
-      )
-    }
-  })
+      )})
   return (
     <Display>
       <Fade top>
@@ -27,5 +27,5 @@ export const Projects = () => {
       </Fade>
       {projects}
     </Display>
-  )
-}
+  )}
+

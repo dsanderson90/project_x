@@ -28,7 +28,7 @@ export default {
     bold: 700,
   },
   lineHeights: {
-    body: 1.5,
+    body: 1.7,
     heading: 1.125,
   },
   images: {

@@ -1,6 +1,6 @@
 export const cssSnippets = [
   {
-    title: "Reset box-sixing to border-box",
+    title: "Reset box-sixing to border-box.",
     code: `
 html {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {
 
 export const jsSnippets = [
   {
-    title: "Remove Duplicates from an array",
+    title: "Remove Duplicates from an array.",
     code: `const unique = [...new Set(array)];`,
   },
 ]

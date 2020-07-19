@@ -54,7 +54,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-
     img: "poke-ball(1).jpg",
     title: "Poké-Search",
     description:

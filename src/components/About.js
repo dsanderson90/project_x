@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
 import Jump from "react-reveal/Jump"
 import Swing from "react-reveal/Swing"
@@ -13,7 +15,7 @@ export const About = ({ title, content }) => {
             <h1>{title}</h1>
           </Swing>
         </Jump>
-        <p>{content}</p>
+        <p sx={{ lineHeight: "body" }}>{content}</p>
       </Display>
     </Fade>
   )
