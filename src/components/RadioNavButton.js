@@ -37,7 +37,6 @@ const RadioNavButton = ({ title, handleSetSection }) => {
           }
         }}
       />
-        <label htmlFor={title}></label>
       <span
         className="design"
         sx={{
