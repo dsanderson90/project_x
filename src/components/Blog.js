@@ -6,10 +6,10 @@ import Fade from "react-reveal/Fade"
 
 export const Blog = () => (
   <Display>
-    <Fade top>
+    <Fade delay={250} top>
       <h1>Blog</h1>
     </Fade>
-    <Fade delay={1000}>
+    <Fade delay={750}>
       <h4 sx={{ textAlign: "center", lineHeight: "170%" }}>
         Thanks for stopping by! I'm working on my first blog post, come check it
         out later!

@@ -44,46 +44,49 @@ export const Snippets = () => {
       <Fade top>
         <h1>Snippets</h1>
       </Fade>
-      <Fade delay={1000}>
+      <Fade delay={500}>
         <h4 sx={{ textAlign: "center" }}>
           A vault for frequently used code that I often forget or google.{" "}
           <span>😬</span>
         </h4>
       </Fade>
       <Flex my={4}>
-        <Fade delay={1500}>
+        <Fade delay={1000}>
           <Button mx={2} as="a" variant="secondary" href="#js">
             JS
           </Button>
         </Fade>
-        <Fade delay={1750}>
+        <Fade delay={1500}>
           <Button as="a" href="#css" mx={2}>
             CSS
           </Button>
         </Fade>
         <Fade delay={2000}>
-        <Button mx={2} as="a" variant="secondary" href="#html">
-          HTML
-        </Button>
+          <Button mx={2} as="a" variant="secondary" href="#html">
+            HTML
+          </Button>
         </Fade>
       </Flex>
-      <Fade delay={3000}>
-      <Heading mt={4} id="js">
-        JavaScript
-      </Heading>
-      </Fade>
 
-      {js}
-          
-      <Heading mt={4} id="css">
-        CSS
-      </Heading>
-      {css}
+      <div sx={{ width: "100%" }}>
+        <Fade bottom>
+        <Heading mt={4} id="js">
+          JavaScript
+        </Heading>
 
-      <Heading mt={4} id="html">
-        HTML
-      </Heading>
-      {html}
+          {js}
+
+          <Heading mt={4} id="css">
+            CSS
+          </Heading>
+          {css}
+
+          <Heading mt={4} id="html">
+            HTML
+          </Heading>
+          {html}
+        </Fade>
+      </div>
     </Display>
   )
 }
