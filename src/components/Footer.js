@@ -54,7 +54,7 @@ const Footer = () => {
       <Fade big delay={2600}>
         <Box mt={4}>
           Developed with{" "}
-          <span role="img" aria-label="heart-emoji" onMouseOver={play}>
+          <span role="img" aria-label="heart-emoji" onMouseOver={play} onMouseOut={stop}>
             💖
           </span>{" "}
           by{" "}
