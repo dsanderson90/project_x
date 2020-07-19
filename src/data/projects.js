@@ -77,7 +77,7 @@ export const projectsData = [
     img: "activatenm-wp.JPG",
     title: "Activate New Mexico",
     description:
-      "Activate New Mexico (ActivateNM) is an Albuquerque-based start-up incubator/accelerator powered by CNM Ingenuity. During my tenure as Resident Web Developer, I collaborated Ruth Dove(Project Manager) and Adrian Tsosie(Graphic Designer) to redesign, rebrand, and revamp Activate NM's online presence with a new website built using WordPress.",
+      "Activate New Mexico (ActivateNM) is an Albuquerque-based start-up incubator/accelerator powered by CNM Ingenuity. During my tenure as Resident Web Developer, I collaborated with Ruth Dove(Project Manager) and Adrian Tsosie(Graphic Designer) to redesign, rebrand, and revamp Activate NM's online presence with a new website built using WordPress.",
     url: "https://activatenm.com/",
     repo: "", // if no repo, the button will not show up
     tags: ["WordPress", "Genesis"],
@@ -90,7 +90,7 @@ export const projectsData = [
       "Little Lions Learn is an online language learning company that delivers high-quality, immersive second language instruction in Spanish and English for children between the ages of 4 and 13. I built this site as part of my residency at the start-up accelerator, ActivateNM. The site uses WordPress, the Genesis Framework and is integrated with Hubspot and WooCommerce.",
     url: "https://littlelionslearn.com",
     repo: "", // if no repo, the button will not show up
-    tags: ["Genesis", "WordPress"],
+    tags: ["Genesis", "WordPress", "Hubspot", "WooCommerce"],
   },
   // {
   //   id: uuidv4(),
