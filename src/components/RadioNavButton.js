@@ -30,6 +30,10 @@ const RadioNavButton = ({ title, handleSetSection }) => {
           top: "50%",
           transform: "translate(-50%, -50%)",
           zIndex: "-1",
+          ":focus + .design::after": {
+            content: `"${title}"`,
+
+          }
         }}
       />
       <span
@@ -53,10 +57,10 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             borderRadius: "inherit",
             position: "absolute",
             transformOrigin: "center center",
-            transition: "0.3s",
+            transition: ".3s",
           },
           "::after": {
-            content: `"${title}"`,
+            content: `" "`,
             display: "block",
             width: "inherit",
             color: "#FFF",
@@ -64,11 +68,16 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",
-            transform: "scale(.7)",
+            opacity: ".9",
+            transform: "scale(.5)",
             transformOrigin: "center center",
             transition: "0.6s",
             background: "#BB99FF",
           },
+          ":hover::after":     {
+            content: `"${title}"`,
+          },
+
         }}
       ></span>
       <span className="text"></span>
