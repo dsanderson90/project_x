@@ -76,8 +76,8 @@ export const Snippets = () => {
           <Heading mt={4} id="js">
             JavaScript
           </Heading>
-          {js}
         </Fade>
+          {js}
         <Heading mt={4} id="css">
           CSS
         </Heading>
