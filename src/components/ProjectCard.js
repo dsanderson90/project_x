@@ -1,11 +1,12 @@
 import React from "react"
-import { Box, Flex, Button, Link } from "theme-ui"
+import { Box, Flex, Button, Badge, Link } from "theme-ui"
 const ProjectCard = ({ title, tags, description, repo, url }) => {
   return (
     <Box
       sx={{
         width: "100%",
-        border: "2px solid white",
+        border: "2px solid",
+        borderColor: "accent",
         padding: "10px",
         margin: "20px 0",
       }}
@@ -13,9 +14,9 @@ const ProjectCard = ({ title, tags, description, repo, url }) => {
       <Flex mt={2} sx={{ justifyContent: "center" }}>
         {tags &&
           tags.map(el => (
-            <Button p={1} variant="secondary" mx={2}>
+            <Badge variant="outline" p={1} mx={2}>
               {el.toLowerCase()}
-            </Button>
+            </Badge>
           ))}
       </Flex>
       <h3>{title}</h3>

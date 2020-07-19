@@ -9,9 +9,10 @@ export default {
 
   styles: {
     a: {
-      color: "#ee99ff",
-      fontFamily: "'Jost', sans-serif",
+      fontFamily: "'Anonymous Pro', sans-serif",
       fontWeight: "700",
+      textDecoration: "none",
+      color: "#fff",
     },
   },
   borders: {
@@ -37,6 +38,22 @@ export default {
       borderRadius: 99999,
     },
   },
+  badges: {
+    primary: {
+      color: "background",
+      bg: "accent",
+    },
+    outline: {
+      color: "accent",
+      bg: "transparent",
+      boxShadow: "inset 0 0 0 1px",
+    },
+  },
+  links: {
+    primary: {
+      color: "#ee99ff",
+    },
+  },
   buttons: {
     primary: {
       color: "background",
@@ -54,9 +71,6 @@ export default {
         color: "text",
       },
     },
-  },
-  links: {
-    color: "red",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
 }

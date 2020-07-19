@@ -27,39 +27,35 @@ const IndexPage = () => {
 
   const initialState = "about"
   const [section, setSection] = useState(initialState)
+
   const handleSetSection = title => {
     setSection(title)
+  }
+
+  const containerStyles = {
+    color: "white",
+    justifyContent: "center",
+    fontSize: ["14px", null, null, "20px"],
+    letterSpacing: "2px",
+    padding: "20px 0",
+    borderBottom: "1px solid #E5FFF0",
+    width: ["50%", null, null, "33%"],
+    margin: "0 auto",
+  }
+  const titleStyles = {
+    color: "white",
+    textAlign: "center",
+    fontSize: "20px",
+    margin: "20px 0",
   }
 
   return (
     <Layout>
       <Fade top>
-        <Flex
-          sx={{
-            color: "white",
-            justifyContent: "center",
-            fontSize: ["14px", null, null, "20px"],
-            letterSpacing: "2px",
-            padding: "20px 0",
-            borderBottom: "1px solid #E5FFF0",
-            width: ["50%", null, null, "33%"],
-            margin: "0 auto",
-          }}
-        >
-          David Sanderson
-        </Flex>
+        <Flex sx={containerStyles}>David Sanderson</Flex>
       </Fade>
       <Fade bottom>
-        <Box
-          sx={{
-            color: "white",
-            textAlign: "center",
-            fontSize: "20px",
-            margin: "20px 0",
-          }}
-        >
-          Software Developer
-        </Box>
+        <Box sx={titleStyles}>Software Developer</Box>
       </Fade>
       <RadioNav handleSetSection={handleSetSection} />
       {components[section]}
