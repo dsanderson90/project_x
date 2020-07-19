@@ -46,17 +46,13 @@ const RadioNavButton = ({ title, handleSetSection }) => {
           margin: ["0px 5px", null, "0px 10px", "0px 20px"],
 
           "::before": {
-            content: `"${title}"`,
             display: "block",
             width: "inherit",
-            color: "#FFF",
             fontSize: ["13px", null, null, "32px"],
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",
-            transform: "scale(0)",
             transformOrigin: "center center",
-            background: "#53B3CB",
             transition: "0.3s",
           },
           "::after": {

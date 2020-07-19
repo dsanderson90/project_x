@@ -5,27 +5,10 @@
  
 }
 
-/* other states */
-input:hover + .design,
-input:focus + .design {
-  border: 1px solid #ee99ff;
-}
-
-input:hover + .design:before,
-input:focus + .design:before {
-  background: var(--other);
-  opacity: 0.9;
-}
-
-input:hover ~ .text {
-  color: #ee99ff;
-}
-
-input:focus + .design::after,
+input:hover + .design::after, input:focus + .design::after,
 input:active + .design::after {
-  opacity: 1;
   transform: scale(1.2);
-
+  color: white;
 }
 
 .hue-rotate {
