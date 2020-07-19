@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 export default function Header({ children, siteTitle, description }) {
   return (
     <header>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang : 'en' }}>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
         <title>{siteTitle}</title>

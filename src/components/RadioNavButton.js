@@ -7,6 +7,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
   }
   return (
     <label
+      htmlFor={title}
       className="hue-rotate"
       sx={{
         display: "flex",
