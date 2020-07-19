@@ -61,7 +61,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             transition: ".3s",
           },
           "::after": {
-            content: `" "`,
+            content: `"${title}"`,
             display: "block",
             width: "inherit",
             color: "#FFF",
