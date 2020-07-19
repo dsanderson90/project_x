@@ -20,6 +20,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
     >
       <input
         onClick={handleClick}
+        onFocus={handleClick}
         name={title}
         value={title}
         type="radio"
