@@ -2,7 +2,7 @@ import React from "react"
 /** @jsx jsx */
 import { jsx, Heading } from "theme-ui"
 import { copyToClipboard } from "../utils/copy-to-clipboard"
-const Snippet = ({ language = "*", title, code, why }) => {
+const Snippet = ({ language = "*", title, code, purpose }) => {
   const handleClick = () => {
     copyToClipboard(code)
   }
@@ -12,7 +12,14 @@ const Snippet = ({ language = "*", title, code, why }) => {
       <Heading as="h4" mb={2} mt={4}>
         {title}
       </Heading>
-      <pre>
+      {purpose && <p>{purpose}</p>}
+      <pre
+        sx={{
+          overflowX: "scroll",
+          scrollbarColor: "rebeccapurple green",
+          scrollbarWidth: "thin",
+        }}
+      >
         <button
           sx={{
             position: "absolute",

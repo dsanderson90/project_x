@@ -14,13 +14,28 @@ export const Snippets = () => {
   }, [])
 
   const js = jsSnippets.map(el => (
-    <Snippet title={el.title} language="javascript" code={el.code} />
+    <Snippet
+      title={el.title}
+      language="javascript"
+      code={el.code}
+      purpose={el.purpose}
+    />
   ))
   const css = cssSnippets.map(el => (
-    <Snippet title={el.title} language="css" code={el.code} />
+    <Snippet
+      title={el.title}
+      language="css"
+      code={el.code}
+      purpose={el.purpose}
+    />
   ))
   const html = htmlSnippets.map(el => (
-    <Snippet title={el.title} language="html" code={el.code} />
+    <Snippet
+      title={el.title}
+      language="html"
+      code={el.code}
+      purpose={el.purpose}
+    />
   ))
 
   return (

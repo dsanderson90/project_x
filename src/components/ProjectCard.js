@@ -8,7 +8,7 @@ const ProjectCard = ({ title, tags, description, repo, url }) => {
         borderColor: "accent",
         padding: "10px",
         width: "100%",
-        margin: "20px 0",
+        margin: "35px 0",
       }}
     >
       <Flex mt={2} sx={{ justifyContent: "center" }}>

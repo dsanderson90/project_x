@@ -32,6 +32,8 @@ input:active + .design::after {
   animation: hue-rotation 2s linear 0ms infinite!important;
 }
 
+
+
 @keyframes hue-rotation {
   0% { filter: hue-rotate(0);  }
   100% { filter: hue-rotate(360deg); }

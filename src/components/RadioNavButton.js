@@ -44,6 +44,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
           position: "relative",
           opacity: "0.6",
           margin: ["0px 5px", null, "0px 10px", "0px 20px"],
+
           "::before": {
             content: `"${title}"`,
             display: "block",
@@ -56,7 +57,6 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             transform: "scale(0)",
             transformOrigin: "center center",
             background: "#53B3CB",
-            opacity: "0.3",
             transition: "0.3s",
           },
           "::after": {
@@ -68,7 +68,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",
-            transform: "scale(0)",
+            transform: "scale(.7)",
             transformOrigin: "center center",
             transition: "0.6s",
             background: "#BB99FF",
