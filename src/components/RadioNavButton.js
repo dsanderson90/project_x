@@ -7,7 +7,6 @@ const RadioNavButton = ({ title, handleSetSection }) => {
   }
   return (
     <label
-      htmlFor={title}
       className="hue-rotate"
       sx={{
         display: "flex",
@@ -19,6 +18,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
         position: "relative",
       }}
     >
+      <label htmlFor={title}></label>
       <input
         onClick={handleClick}
         onFocus={handleClick}
