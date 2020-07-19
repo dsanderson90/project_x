@@ -9,8 +9,9 @@ const Footer = () => {
     <footer
       sx={{
         fontSize: ["8px", null, null, "14px"],
-        textAlign: "center",
         flexShrink: 0,
+        margin: "0 auto",
+        textAlign: "center",
         width: ["100%", null, null, "37%"],
       }}
     >

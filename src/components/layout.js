@@ -26,7 +26,6 @@ const Layout = ({ children }) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center",
         height: "100%",
         fontFamily: "body",
         flex: "1 0 auto",
