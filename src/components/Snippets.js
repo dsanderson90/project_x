@@ -27,10 +27,11 @@ export const Snippets = () => {
     <Display>
       <Fade top>
         <h1>Snippets</h1>
-        <h4>
+        <h4 sx={{ textAlign: "center" }}>
           A vault for frequently used code that I often forget or google.{" "}
           <span>😬</span>
         </h4>
+
         <Flex my={4}>
           <Button mx={2} as="a" variant="secondary" href="#js">
             JS
@@ -38,7 +39,7 @@ export const Snippets = () => {
           <Button as="a" href="#css" mx={2}>
             CSS
           </Button>
-          <Button mx={2} as="a" href="#html">
+          <Button mx={2} as="a" variant="secondary" href="#html">
             HTML
           </Button>
         </Flex>
