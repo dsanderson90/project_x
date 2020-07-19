@@ -4,10 +4,11 @@ import { jsx } from "theme-ui"
 import useSound from "use-sound"
 import levelUp from "../utils/sounds/level-up.mp3"
 const ResumeLink = ({ link }) => {
-  const [play] = useSound(levelUp, { volume: .4})
+  const [play, { stop }] = useSound(levelUp, { volume: .4})
   return (
     <a
       onMouseEnter={play}
+      onMouseOut={stop}
       href={link}
       target="_blank"
       rel="noreferrer nooppener"

@@ -16,6 +16,7 @@ export const Snippets = () => {
 
   const js = jsSnippets.map(el => (
     <Snippet
+      key={el.id}
       title={el.title}
       language="javascript"
       code={el.code}
@@ -24,6 +25,7 @@ export const Snippets = () => {
   ))
   const css = cssSnippets.map(el => (
     <Snippet
+      key={el.id}
       title={el.title}
       language="css"
       code={el.code}
@@ -32,6 +34,7 @@ export const Snippets = () => {
   ))
   const html = htmlSnippets.map(el => (
     <Snippet
+      key={el.id}
       title={el.title}
       language="html"
       code={el.code}
@@ -69,23 +72,21 @@ export const Snippets = () => {
       </Flex>
 
       <div sx={{ width: "100%" }}>
-        <Fade bottom delay={2500}>
-        <Heading mt={4} id="js">
-          JavaScript
-        </Heading>
-
+        <Fade bottom delay={1800}>
+          <Heading mt={4} id="js">
+            JavaScript
+          </Heading>
           {js}
-
-          <Heading mt={4} id="css">
-            CSS
-          </Heading>
-          {css}
-
-          <Heading mt={4} id="html">
-            HTML
-          </Heading>
-          {html}
         </Fade>
+        <Heading mt={4} id="css">
+          CSS
+        </Heading>
+        {css}
+
+        <Heading mt={4} id="html">
+          HTML
+        </Heading>
+        {html}
       </div>
     </Display>
   )

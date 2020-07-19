@@ -1,10 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import { Link, Box } from "theme-ui"
+import { Link, Box, Button } from "theme-ui"
 import Fade from "react-reveal/Fade"
+import useSound from "use-sound"
+import heartBeat from "../utils/sounds/heartbeat.mp3"
 
 const Footer = () => {
+  const [play, { stop }] = useSound(heartBeat, { volume: 0.2 })
+
   return (
     <footer
       sx={{
@@ -50,7 +54,7 @@ const Footer = () => {
       <Fade big delay={2600}>
         <Box mt={4}>
           Developed with{" "}
-          <span role="img" aria-label="emoji">
+          <span role="img" aria-label="heart-emoji" onMouseOver={play}>
             💖
           </span>{" "}
           by{" "}

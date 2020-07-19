@@ -1,9 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import useSound from "use-sound"
-import switchOn from "../utils/sounds/switch-on.mp3"
-import beep from "../utils/sounds/beep.mp3"
 
 const RadioNavButton = ({ title, handleSetSection }) => {
 
