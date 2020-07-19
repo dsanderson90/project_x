@@ -26,7 +26,7 @@ export const htmlSnippets = [
 <a 
   href="https://example.com" 
   target="_blank" 
-  rel="noreferrer">
+  rel="noreferrer nooppener">
   Link Name here
 </a>`,
     why: "",

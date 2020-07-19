@@ -17,7 +17,7 @@ const Snippet = ({ language = "*", title, code, why }) => {
           sx={{
             position: "absolute",
             right: "1.25rem",
-            top: "0.5rem",
+            top: ".75rem",
             border: "0",
             borderRadius: "3px",
             padding: "0.5em",
