@@ -1,9 +1,13 @@
 import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import useSound from "use-sound"
+import levelUp from "../utils/sounds/level-up.mp3"
 const ResumeLink = ({ link }) => {
+  const [play] = useSound(levelUp, { volume: .4})
   return (
     <a
+      onMouseEnter={play}
       href={link}
       target="_blank"
       rel="noreferrer nooppener"
@@ -40,19 +44,19 @@ const ResumeLink = ({ link }) => {
           opacity: "1",
         },
         ":focus::before": {
-            content: '"📝"',
-            fontSize: "60px",
-            position: "absolute",
-            textAlign: "center",
-            transition: ".5s",
-            top: "-70px",
-            left: "10%",
-            transform: "rotate(360deg)",
-            opacity: "1",
-          },
+          content: '"📝"',
+          fontSize: "60px",
+          position: "absolute",
+          textAlign: "center",
+          transition: ".5s",
+          top: "-70px",
+          left: "10%",
+          transform: "rotate(360deg)",
+          opacity: "1",
+        },
         "::active": {
-            boxShadow: 'none',
-            top: '5px',
+          boxShadow: "none",
+          top: "5px",
         },
       }}
     >

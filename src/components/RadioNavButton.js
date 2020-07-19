@@ -6,19 +6,13 @@ import switchOn from "../utils/sounds/switch-on.mp3"
 import beep from "../utils/sounds/beep.mp3"
 
 const RadioNavButton = ({ title, handleSetSection }) => {
-  const [playClicked] = useSound(switchOn)
-  const [playFocused, { stop }] = useSound(beep)
+
   const handleClick = e => {
     handleSetSection(e.target.name)
-    if(e.type == "click") {
-      playClicked() 
-    }
   }
   return (
     <label
       className="hue-rotate"
-      onMouseEnter={() => playFocused()}
-      onMouseLeave={ () => stop()}
       sx={{
         display: "flex",
         justifyContent: "flex-start",
@@ -31,7 +25,6 @@ const RadioNavButton = ({ title, handleSetSection }) => {
     >
       <input
         onClick={handleClick}
-        onFocus={handleClick}
         name={title}
         value={title}
         type="radio"
