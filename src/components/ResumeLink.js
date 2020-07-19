@@ -39,6 +39,17 @@ const ResumeLink = ({ link }) => {
           transform: "rotate(360deg)",
           opacity: "1",
         },
+        ":focus::before": {
+            content: '"📝"',
+            fontSize: "60px",
+            position: "absolute",
+            textAlign: "center",
+            transition: ".5s",
+            top: "-70px",
+            left: "10%",
+            transform: "rotate(360deg)",
+            opacity: "1",
+          },
         "::active": {
             boxShadow: 'none',
             top: '5px',
