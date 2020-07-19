@@ -75,9 +75,6 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             transition: "0.6s",
             background: "#BB99FF",
           },
-          ":hover::after": {
-            content: `"${title}"`,
-          },
         }}
       ></span>
       <span className="text"></span>
