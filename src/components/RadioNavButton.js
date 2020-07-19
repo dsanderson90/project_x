@@ -18,7 +18,6 @@ const RadioNavButton = ({ title, handleSetSection }) => {
         position: "relative",
       }}
     >
-      <label htmlFor={title}></label>
       <input
         onClick={handleClick}
         onFocus={handleClick}
@@ -34,10 +33,11 @@ const RadioNavButton = ({ title, handleSetSection }) => {
           zIndex: "-1",
           ":focus + .design::after": {
             content: `"${title}"`,
-
+            
           }
         }}
       />
+        <label htmlFor={title}></label>
       <span
         className="design"
         sx={{
