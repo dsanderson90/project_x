@@ -26,11 +26,6 @@ const ResumeLink = ({ link }) => {
         },
         "::before": {
           content: '""',
-          position: "absolute",
-          top: "-5px",
-          width: "100%",
-          left: "-60px",
-          height: "100%",
         },
         ":hover::before": {
           content: '"📝"',
