@@ -25,7 +25,10 @@ export const Projects = () => {
       <Fade top>
         <h1>Projects</h1>
       </Fade>
+      <div>
       {projects}
+
+      </div>
     </Display>
   )}
 

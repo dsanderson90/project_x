@@ -4,10 +4,10 @@ const ProjectCard = ({ title, tags, description, repo, url }) => {
   return (
     <Box
       sx={{
-        width: "100%",
         border: "2px solid",
         borderColor: "accent",
         padding: "10px",
+        width: "100%",
         margin: "20px 0",
       }}
     >
