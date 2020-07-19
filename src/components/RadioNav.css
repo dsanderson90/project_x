@@ -6,7 +6,6 @@
 input:hover + .design::after, input:focus + .design::after,
 input:active + .design::after {
   transform: scale(1.2);
-  color: #fff;
   opacity: 1;
 }
 .hue-rotate {
