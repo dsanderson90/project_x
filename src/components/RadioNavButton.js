@@ -1,13 +1,24 @@
-import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import React from "react"
+import useSound from "use-sound"
+import switchOn from "../utils/sounds/switch-on.mp3"
+import beep from "../utils/sounds/beep.mp3"
+
 const RadioNavButton = ({ title, handleSetSection }) => {
+  const [playClicked] = useSound(switchOn)
+  const [playFocused, { stop }] = useSound(beep)
   const handleClick = e => {
     handleSetSection(e.target.name)
+    if(e.type == "click") {
+      playClicked() 
+    }
   }
   return (
     <label
       className="hue-rotate"
+      onMouseEnter={() => playFocused()}
+      onMouseLeave={ () => stop()}
       sx={{
         display: "flex",
         justifyContent: "flex-start",
@@ -33,8 +44,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
           zIndex: "-1",
           ":focus + .design::after": {
             content: `"${title}"`,
-            
-          }
+          },
         }}
       />
       <span
@@ -75,10 +85,9 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             transition: "0.6s",
             background: "#BB99FF",
           },
-          ":hover::after":     {
+          ":hover::after": {
             content: `"${title}"`,
           },
-
         }}
       ></span>
       <span className="text"></span>
