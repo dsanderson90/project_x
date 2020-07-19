@@ -5,10 +5,15 @@ import Display from "./Display"
 import Fade from "react-reveal/Fade"
 
 export const Blog = () => (
-  <Fade top>
-    <Display>
+  <Display>
+    <Fade top>
       <h1>Blog</h1>
-      <h4 sx={{ textAlign: "center", lineHeight: "170%" }}>Thanks for stopping by! I'm working on my first blog post, come check it out later!</h4>
-    </Display>
-  </Fade>
+    </Fade>
+    <Fade delay={1000}>
+      <h4 sx={{ textAlign: "center", lineHeight: "170%" }}>
+        Thanks for stopping by! I'm working on my first blog post, come check it
+        out later!
+      </h4>
+    </Fade>
+  </Display>
 )
