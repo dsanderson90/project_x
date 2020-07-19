@@ -8,7 +8,7 @@ export default function Header({ children, siteTitle, description }) {
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
         <title>{siteTitle}</title>
-        <link rel="canonical" href="http://davidsanderson.dev" />
+        <link rel="canonical" href="https://davidsanderson.dev" />
       </Helmet>
       {children}
     </header>
