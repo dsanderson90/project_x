@@ -69,7 +69,7 @@ export const Snippets = () => {
       </Flex>
 
       <div sx={{ width: "100%" }}>
-        <Fade bottom>
+        <Fade bottom delay={2500}>
         <Heading mt={4} id="js">
           JavaScript
         </Heading>
