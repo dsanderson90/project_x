@@ -1,12 +1,7 @@
 
-.dark {
-  --primary: "#ff6347";
-  --other: #53B3CB; 
-}
 input:hover + .design::after, input:focus + .design::after,
 input:active + .design::after {
   transform: scale(1.2);
-  opacity: 1;
 }
 .hue-rotate {
   animation: hue-rotation 2s linear 0ms infinite!important;

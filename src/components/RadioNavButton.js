@@ -1,6 +1,6 @@
+import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
 import { useColorMode } from 'theme-ui'
 
 const RadioNavButton = ({ title, handleSetSection }) => {
@@ -39,9 +39,7 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
           top: "50%",
           transform: "translate(-50%, -50%)",
           zIndex: "-1",
-          ":focus + .design::after": {
-            content: `"${title}"`,
-          },
+
         }}
       />
       <span
@@ -50,7 +48,7 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
           // values referencing scales defined in a theme
           width: "16px",
           height: "16px",
-          border: "1px solid var(--other)",
+          border: "1px solid #53B3CB",
           borderRadius: "100%",
           marginRight: "20px",
           position: "relative",
@@ -75,7 +73,6 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",
-            opacity: ".9",
             transform: "scale(.5)",
             transformOrigin: "center center",
             transition: "0.6s",
