@@ -13,7 +13,7 @@ const ResumeLink = ({ link }) => {
       target="_blank"
       rel="noreferrer nooppener"
       sx={{
-        color: "black",
+        color: "background",
         backgroundColor: "accent",
         padding: "1em 1.5em",
         margin: "40px 0px",
