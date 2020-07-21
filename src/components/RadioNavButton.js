@@ -1,15 +1,22 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
+import { useColorMode } from 'theme-ui'
 
 const RadioNavButton = ({ title, handleSetSection }) => {
-
+  const [colorMode, setColorMode] = useColorMode()
+const isColorModeToggle = title == "🌞" || title == "🌕"
   const handleClick = e => {
-    handleSetSection(e.target.name)
+    if(!isColorModeToggle) {
+      handleSetSection(e.target.name)
+    }
+    if(isColorModeToggle) {
+        setColorMode(colorMode === 'default' ? 'dark' : 'default')
+    }
   }
   return (
     <label
-      className="hue-rotate"
+      className={!isColorModeToggle && "hue-rotate"}
       sx={{
         display: "flex",
         justifyContent: "flex-start",
@@ -64,7 +71,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
             content: `"${title}"`,
             display: "block",
             width: "inherit",
-            color: "#FFF",
+            color: "text",
             fontSize: ["13px", null, null, "26px"],
             height: "inherit",
             borderRadius: "inherit",

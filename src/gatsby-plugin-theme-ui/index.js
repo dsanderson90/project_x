@@ -1,12 +1,19 @@
 export default {
-  colors: {
-    text: "rgb(240, 245, 250)",
-    background: "#222639",
-    primary: "#53B3CB",
-    secondary: "#ff6347",
-    accent: "#E5FFF0",
-  },
+    colors: {
 
+      text: '#222639',
+      background: '#e2e8f0',
+      primary: '#0cf',
+      modes: {
+        dark: {
+          text: "rgb(240, 245, 250)",
+          background: "#222639",
+          primary: "#53B3CB",
+          secondary: "#ff6347",
+          accent: "#E5FFF0",
+        }
+      }
+    },
   styles: {
     a: {
       fontFamily: "'Anonymous Pro', sans-serif",

@@ -33,17 +33,18 @@ const IndexPage = () => {
   }
 
   const containerStyles = {
-    color: "white",
+    color: "text",
     justifyContent: "center",
     fontSize: ["14px", null, null, "20px"],
     letterSpacing: "2px",
     padding: "20px 0",
-    borderBottom: "1px solid #E5FFF0",
+    borderBottom: "1px solid",
+    borderColor: "text",
     width: ["50%", null, null, "33%"],
     margin: "0 auto",
   }
   const titleStyles = {
-    color: "white",
+    color: "text",
     textAlign: "center",
     fontSize: "20px",
     margin: "20px 0",
