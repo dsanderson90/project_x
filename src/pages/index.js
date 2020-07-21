@@ -3,15 +3,18 @@ import { jsx } from "theme-ui"
 import React, { useState } from "react"
 import { Flex, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
-
+import { useColorMode } from 'theme-ui'
 import Layout from "../components/layout"
 import RadioNav from "../components/RadioNav"
+import RadioNavButton from "../components/RadioNavButton"
 import { Snippets } from "../components/Snippets"
 import { Blog } from "../components/Blog"
 import { About } from "../components/About"
 import { Resume } from "../components/Resume"
 import { Projects } from "../components/Projects"
 const IndexPage = () => {
+const [colorMode, setColorMode] = useColorMode()
+
   const [components, setComponents] = useState({
     about: (
       <About
@@ -52,6 +55,9 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Flex mr={[null, null, null, "350px"]}sx={{ justifyContent: "flex-end" }}>
+        <RadioNavButton title={colorMode === "default" ? "🌕" : "🌞"} />
+      </Flex>
       <Fade top>
         <Flex sx={containerStyles}>David Sanderson</Flex>
       </Fade>

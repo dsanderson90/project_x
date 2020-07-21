@@ -1,16 +1,11 @@
 import React from "react"
 /** @jsx jsx */
-import { useColorMode } from "theme-ui"
 import { jsx, Flex } from "theme-ui"
 import "./RadioNav.css"
 import RadioNavButton from "./RadioNavButton"
 const RadioNav = ({ handleSetSection }) => {
-  const [colorMode, setColorMode] = useColorMode()
   return (
     <>
-    <Flex sx={{justifyContent: "center"}}>
-      <RadioNavButton title={colorMode === "default" ? "🌕" : "🌞"} />
-    </Flex>
       <Flex
         sx={{ justifyContent: "center", alignItems: "center" }}
         className="container"

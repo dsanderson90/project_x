@@ -8,7 +8,7 @@ const Display = ({ children }) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        fontSize: "20px",
+        fontSize: ["18px", null, null, "20px"],
         margin: ["20px 40px", null, null, "30px 390px"],
         padding: [null, null, null, "0 0 0 40px"]
       }}

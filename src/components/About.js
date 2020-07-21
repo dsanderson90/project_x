@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Heading } from "theme-ui"
 import React from "react"
 import Jump from "react-reveal/Jump"
 import Swing from "react-reveal/Swing"
@@ -12,7 +12,7 @@ export const About = ({ title, content }) => {
       <Display>
         <Jump delay={500}>
           <Swing delay={350}>
-            <h1>{title}</h1>
+            <Heading as="h1">{title}</Heading>
           </Swing>
         </Jump>
         <p sx={{ lineHeight: "body" }}>{content}</p>

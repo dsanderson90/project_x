@@ -1,6 +1,5 @@
 export default {
     colors: {
-
       text: '#222639',
       background: '#e2e8f0',
       primary: '#0cf',
@@ -78,6 +77,9 @@ export default {
         color: "text",
       },
     },
+  },
+  heading: {
+    fontFamily: "'Anonymous Pro', monospace",   
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
 }

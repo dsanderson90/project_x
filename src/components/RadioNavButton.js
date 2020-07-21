@@ -60,7 +60,6 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
           "::before": {
             display: "block",
             width: "inherit",
-            fontSize: ["13px", null, null, "32px"],
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",
