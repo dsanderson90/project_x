@@ -69,7 +69,7 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
             display: "block",
             width: "inherit",
             color: "text",
-            fontSize: ["13px", null, null, "26px"],
+            fontSize: ["20px", null, null, "28px"],
             height: "inherit",
             borderRadius: "inherit",
             position: "absolute",
