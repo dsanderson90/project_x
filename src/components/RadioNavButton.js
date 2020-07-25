@@ -52,7 +52,7 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
           borderRadius: "100%",
           marginRight: "20px",
           position: "relative",
-          opacity: "0.6",
+          opacity: "1",
           margin: ["0px 5px", null, "0px 10px", "0px 20px"],
 
           "::before": {
