@@ -4,7 +4,6 @@ import React, { useEffect } from "react"
 import Prism from "prismjs"
 import Display from "./Display"
 import Fade from "react-reveal/Fade"
-import GlitchText from "./GlitchText"
 import { jsSnippets, cssSnippets, htmlSnippets } from "../data/snippets"
 import Snippet from "./Snippet"
 export const Snippets = () => {
@@ -46,9 +45,7 @@ export const Snippets = () => {
     <Display>
       <Fade top>
         <h1>
-      <GlitchText>
         Snippets
-      </GlitchText>
         </h1>
 
       </Fade>
