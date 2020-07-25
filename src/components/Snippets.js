@@ -59,39 +59,39 @@ export const Snippets = () => {
         </h4>
       </Fade>
       <Flex my={4}>
-        <Fade delay={1000}>
-          <Button mx={2} as="a" variant="secondary" href="#js">
-            JS
-          </Button>
-        </Fade>
+      <Fade delay={1000}>
+      <Button mx={2} as="a" variant="secondary" href="#html">
+      HTML
+      </Button>
+      </Fade>
         <Fade delay={1500}>
-          <Button as="a" href="#css" mx={2}>
-            CSS
+          <Button mx={2} as="a" href="#js">
+          JS
           </Button>
-        </Fade>
-        <Fade delay={2000}>
-          <Button mx={2} as="a" variant="secondary" href="#html">
+          </Fade>
+          <Fade delay={2000}>
+          <Button as="a" variant="secondary" href="#css" mx={2}>
+          CSS
+          </Button>
+          </Fade>
+          </Flex>
+          
+          <div sx={{ width: "100%" }}>
+          <Fade bottom delay={1800}>
+          <Heading mt={4} id="html">
             HTML
-          </Button>
-        </Fade>
-      </Flex>
-
-      <div sx={{ width: "100%" }}>
-        <Fade bottom delay={1800}>
+          </Heading>
+          </Fade>
+          {html}
           <Heading mt={4} id="js">
             JavaScript
           </Heading>
-        </Fade>
           {js}
         <Heading mt={4} id="css">
           CSS
         </Heading>
         {css}
 
-        <Heading mt={4} id="html">
-          HTML
-        </Heading>
-        {html}
       </div>
     </Display>
   )
