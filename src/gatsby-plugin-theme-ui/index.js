@@ -3,7 +3,7 @@ export default {
       text: '#222639',
       background: '#e2e8f0',
       primary: '#0cf',
-      accent: "#000",
+      accent: "#222639",
       modes: {
         dark: {
           text: "rgb(240, 245, 250)",
