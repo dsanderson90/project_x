@@ -17,8 +17,8 @@ const Snippet = ({ language = "*", title, code, purpose }) => {
         <pre
           sx={{
             overflowX: "scroll",
-            scrollbarColor: "rebeccapurple green",
-            scrollbarWidth: "thin",
+            scrollbarColor: "primary",
+            scrollbarWidth: "#FFF",
           }}
         >
           <button
