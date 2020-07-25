@@ -15,7 +15,7 @@ import { Projects } from "../components/Projects"
 const IndexPage = () => {
 const [colorMode, setColorMode] = useColorMode()
 
-  const [components, setComponents] = useState({
+  const [components] = useState({
     about: (
       <About
         title="Hi I am David Sanderson!"
@@ -56,7 +56,7 @@ const [colorMode, setColorMode] = useColorMode()
   return (
     <Layout>
       <Flex mr={[null, null, null, "350px"]}sx={{ justifyContent: "flex-end" }}>
-        <RadioNavButton title={colorMode === "default" ? "🌕" : "🌞"} />
+        <RadioNavButton title={colorMode === "default" ? "🌞" : "🌕"} />
       </Flex>
       <Fade top>
         <Flex sx={containerStyles}>David Sanderson</Flex>
