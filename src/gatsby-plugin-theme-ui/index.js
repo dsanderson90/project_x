@@ -1,16 +1,17 @@
 export default {
     colors: {
-      text: '#222639',
-      background: '#e2e8f0',
-      primary: '#0cf',
-      accent: "#000",
+      text: "rgb(240, 245, 250)",
+      background: "#222639",
+      primary: "#53B3CB",
+      secondary: "#ff6347",
+      accent: "#E5FFF0",
+
       modes: {
         dark: {
-          text: "rgb(240, 245, 250)",
-          background: "#222639",
-          primary: "#53B3CB",
-          secondary: "#ff6347",
-          accent: "#E5FFF0",
+          text: '#222639',
+          background: '#e2e8f0',
+          primary: '#0cf',
+          accent: "#222639",
         }
       }
     },
