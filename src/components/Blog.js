@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Heading } from "theme-ui"
 import React from "react"
 import Display from "./Display"
 import Fade from "react-reveal/Fade"
@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade"
 export const Blog = () => (
   <Display>
     <Fade delay={250} top>
-      <h1>Blog</h1>
+      <Heading>Blog</Heading>
     </Fade>
     <Fade delay={750}>
       <h4 sx={{ textAlign: "center", lineHeight: "170%" }}>

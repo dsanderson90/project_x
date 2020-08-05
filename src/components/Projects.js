@@ -2,6 +2,7 @@ import React from "react"
 import Display from "./Display"
 import Fade from "react-reveal/Fade"
 import ProjectCard from "./ProjectCard"
+import { Heading } from "theme-ui"
 import { projectsData } from "../data/projects"
 export const Projects = () => {
   const projects = projectsData.map((project, i) => {
@@ -24,7 +25,7 @@ export const Projects = () => {
   return (
     <Display>
       <Fade delay={250} top>
-        <h1>Projects</h1>
+        <Heading>Projects</Heading>
       </Fade>
       <div>{projects}</div>
     </Display>

@@ -45,11 +45,11 @@ export const Snippets = () => {
   return (
     <Display>
       <Fade top>
-        <h1>
+        <Heading>
       <GlitchText>
         Snippets
       </GlitchText>
-        </h1>
+        </Heading>
 
       </Fade>
       <Fade delay={500}>
