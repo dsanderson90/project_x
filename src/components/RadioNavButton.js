@@ -6,6 +6,7 @@ import { useColorMode } from 'theme-ui'
 const RadioNavButton = ({ title, handleSetSection }) => {
   const [colorMode, setColorMode] = useColorMode()
 const isColorModeToggle = title == "🌞" || title == "🌕"
+const toggleClass = title === "🌕" ? "moon" : "sun";
   const handleClick = e => {
     if(!isColorModeToggle) {
       handleSetSection(e.target.name)
@@ -16,7 +17,7 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
   }
   return (
     <label
-      className={!isColorModeToggle && "hue-rotate"}
+      className={!isColorModeToggle ? "hue-rotate" : toggleClass}
       sx={{
         display: "flex",
         justifyContent: "flex-start",
@@ -43,7 +44,7 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
         }}
       />
       <span
-        className="design"
+        className={`${toggleClass} design`}
         sx={{
           // values referencing scales defined in a theme
           width: "16px",
@@ -76,7 +77,7 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
             transform: "scale(.5)",
             transformOrigin: "center center",
             transition: "0.6s",
-            background: "#BB99FF",
+            background: `${isColorModeToggle ? toggleClass : "#BB99FF"}`,
           },
         }}
       ></span>
