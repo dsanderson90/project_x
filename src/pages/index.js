@@ -1,9 +1,10 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Flex, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
 import { useColorMode } from "theme-ui"
+import { isBrowser } from "../utils/shared"
 import Layout from "../components/layout"
 import RadioNav from "../components/RadioNav"
 import RadioNavButton from "../components/RadioNavButton"
@@ -26,11 +27,16 @@ const IndexPage = () => {
     blog: <Blog />,
     snippets: <Snippets />,
   })
-  const initialState = "about"
-  const [section, setSection] = useState(initialState)
   const handleSetSection = title => {
     setSection(title)
   }
+  useEffect(() => {
+    const page = isBrowser && window.location.hash.replace("#", "");
+    setSection(page || "about")
+    return () => {
+    }
+  }, [handleSetSection])
+  const [section, setSection] = useState()
   const containerStyles = {
     color: "text",
     justifyContent: "center",
