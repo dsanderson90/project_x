@@ -32,8 +32,8 @@ const ResumeLink = ({ resume }) => {
           textAlign: "center",
           transition: ".5s",
           top: "-70px",
-          left: "10%",
-          transform: "rotate(360deg)",
+          left: "20%",
+          animation: "floating 2s linear 0ms infinite",
           opacity: "1",
         },
         ":focus::before": {

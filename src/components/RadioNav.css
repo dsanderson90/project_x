@@ -1,13 +1,33 @@
-
-input:hover + .design::after, input:focus + .design::after,
+input:hover + .design::after,
+input:focus + .design::after,
 input:active + .design::after {
   transform: scale(1.2);
 }
 .hue-rotate {
-  animation: hue-rotation 2s linear 0ms infinite!important;
+  animation: hue-rotation 2s linear 0ms infinite !important;
 }
 
 @keyframes hue-rotation {
-  0% { filter: hue-rotate(0);  }
-  100% { filter: hue-rotate(360deg); }
+  0% {
+    filter: hue-rotate(0);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes floating {
+  from {
+    -webkit-transform: rotate(180deg); transform:rotate(180deg);
+  }
+  10% {
+    -webkit-transform: rotate(360deg); transform:rotate(360deg);
+    transform: translate(0, -25px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
 }
