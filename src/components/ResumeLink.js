@@ -22,9 +22,6 @@ const ResumeLink = ({ resume }) => {
         textDecoration: "none",
         border: "solid 3px",
         textTransform: "uppercase",
-        "&:hover": {
-          border: "2px solid black",
-        },
         "::before": {
           content: '""',
         },
