@@ -2,6 +2,7 @@ import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { useColorMode } from "theme-ui"
+import { isBrowser } from "../utils/shared"
 import useSound from "use-sound"
 import switchOn from "../utils/sounds/switch-on.mp3"
 const RadioNavButton = ({ title, handleSetSection }) => {
@@ -17,8 +18,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
       setColorMode(colorMode === "default" ? "dark" : "default")
     }
   }
-  const isBrowser = () =>
-    ![typeof window, typeof document].includes("undefined")
+
   return (
     <label
       onClick={() =>

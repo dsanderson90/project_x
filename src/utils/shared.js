@@ -26,3 +26,5 @@ export const copyToClipboard = str => {
 
   return clipboard.writeText(str)
 }
+export const isBrowser = () =>
+  ![typeof window, typeof document].includes("undefined")

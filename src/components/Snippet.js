@@ -2,7 +2,7 @@ import React from "react"
 /** @jsx jsx */
 import { jsx, Heading } from "theme-ui"
 
-import { copyToClipboard } from "../utils/copy-to-clipboard"
+import { copyToClipboard } from "../utils/shared"
 const Snippet = ({ language = "*", title, code, purpose }) => {
   const handleClick = () => {
     copyToClipboard(code)
