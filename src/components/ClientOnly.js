@@ -1,3 +1,6 @@
+import React from 'react'
+
+
 function ClientOnly({ children, ...delegated }) {
     const [hasMounted, setHasMounted] = React.useState(false);
     React.useEffect(() => {
@@ -12,3 +15,5 @@ function ClientOnly({ children, ...delegated }) {
       </div>
     );
   }
+export default ClientOnly
+  
