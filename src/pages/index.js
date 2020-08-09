@@ -31,10 +31,11 @@ const IndexPage = () => {
     setSection(title)
   }
   useEffect(() => {
-    const page = isBrowser && window.location.hash.replace("#", "");
+    const page = isBrowser && window.location.hash.replace("#", "")
+    const btn = window?.document?.querySelector(`.${section}`)
+    btn.focus()
     setSection(page || "about")
-    return () => {
-    }
+    return () => {}
   }, [handleSetSection])
   const [section, setSection] = useState()
   const containerStyles = {

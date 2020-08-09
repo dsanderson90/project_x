@@ -24,7 +24,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
       onClick={() =>
         isBrowser && !isColorModeToggle ? (window.location.hash = title) : play()
       }
-      className={!isColorModeToggle && "hue-rotate"}
+      className={!isColorModeToggle && "hue-rotate "}
       sx={{
         display: "flex",
         justifyContent: "flex-start",
@@ -37,6 +37,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
     >
       <input
         onClick={handleClick}
+        className={title}
         name={title}
         value={title}
         type="radio"
