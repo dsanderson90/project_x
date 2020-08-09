@@ -1,6 +1,6 @@
+import React from "react"
 /** @jsx jsx */
 import { jsx, Heading } from "theme-ui"
-import React from "react"
 import Jump from "react-reveal/Jump"
 import Swing from "react-reveal/Swing"
 import Display from "./Display"
