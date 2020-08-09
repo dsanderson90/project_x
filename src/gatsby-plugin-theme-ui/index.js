@@ -5,6 +5,7 @@ export default {
       primary: "#53B3CB",
       secondary: "#ff6347",
       accent: "#E5FFF0",
+      toggleColor: "#F5F3CE",
 
       modes: {
         dark: {
@@ -12,6 +13,7 @@ export default {
           background: '#e2e8f0',
           primary: '#0cf',
           accent: "#222639",
+          toggleColor: "#F28C38"
         }
       }
     },
