@@ -1,6 +1,6 @@
 
 ## 🧐 David Sanderson
 
-[![Deploy to Netlify](https://www.davidsanderson.dev)
+[!davidsanderson.dev](https://www.davidsanderson.dev)
 
 
