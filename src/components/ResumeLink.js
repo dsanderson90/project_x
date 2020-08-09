@@ -4,8 +4,7 @@ import Link from "gatsby"
 import { jsx } from "theme-ui"
 import useSound from "use-sound"
 import levelUp from "../utils/sounds/level-up.mp3"
-import resume from "../../static/assets/david_sanderson_resume_080420.pdf"
-const ResumeLink = ({ link }) => {
+const ResumeLink = ({ resume }) => {
   const [play, { stop }] = useSound(levelUp, { volume: .4})
   return (
     <a
