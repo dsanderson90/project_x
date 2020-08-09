@@ -1,9 +1,9 @@
+import React, { useState } from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React, { useState } from "react"
 import { Flex, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
-import { useColorMode } from 'theme-ui'
+import { useColorMode } from "theme-ui"
 import Layout from "../components/layout"
 import RadioNav from "../components/RadioNav"
 import RadioNavButton from "../components/RadioNavButton"
@@ -13,8 +13,7 @@ import { About } from "../components/About"
 import { Resume } from "../components/Resume"
 import { Projects } from "../components/Projects"
 const IndexPage = () => {
-const [colorMode, setColorMode] = useColorMode()
-
+  const [colorMode] = useColorMode()
   const [components] = useState({
     about: (
       <About
@@ -27,14 +26,11 @@ const [colorMode, setColorMode] = useColorMode()
     blog: <Blog />,
     snippets: <Snippets />,
   })
-
   const initialState = "about"
   const [section, setSection] = useState(initialState)
-
   const handleSetSection = title => {
     setSection(title)
   }
-
   const containerStyles = {
     color: "text",
     justifyContent: "center",
@@ -55,7 +51,10 @@ const [colorMode, setColorMode] = useColorMode()
 
   return (
     <Layout>
-      <Flex mr={[null, null, null, "350px"]}sx={{ justifyContent: "flex-end" }}>
+      <Flex
+        mr={[null, null, null, "350px"]}
+        sx={{ justifyContent: "flex-end" }}
+      >
         <RadioNavButton title={colorMode === "default" ? "🌞" : "🌕"} />
       </Flex>
       <Fade top>

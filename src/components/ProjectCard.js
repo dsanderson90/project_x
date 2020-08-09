@@ -13,8 +13,8 @@ const ProjectCard = ({ title, tags, description, repo, url }) => {
     >
       <Flex mt={2} sx={{ justifyContent: "center" }}>
         {tags &&
-          tags.map(el => (
-            <Badge variant="outline" p={1} mx={2}>
+          tags.map((el, i) => (
+            <Badge key={i} variant="outline" p={1} mx={2}>
               {el.toLowerCase()}
             </Badge>
           ))}

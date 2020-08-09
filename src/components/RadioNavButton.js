@@ -1,21 +1,29 @@
 import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { useColorMode } from 'theme-ui'
-
+import { useColorMode } from "theme-ui"
+import useSound from "use-sound"
+import switchOn from "../utils/sounds/switch-on.mp3"
 const RadioNavButton = ({ title, handleSetSection }) => {
+  const [play] = useSound(switchOn)
+
   const [colorMode, setColorMode] = useColorMode()
-const isColorModeToggle = title == "🌞" || title == "🌕"
+  const isColorModeToggle = title == "🌞" || title == "🌕"
   const handleClick = e => {
-    if(!isColorModeToggle) {
+    if (!isColorModeToggle) {
       handleSetSection(e.target.name)
     }
-    if(isColorModeToggle) {
-        setColorMode(colorMode === 'default' ? 'dark' : 'default')
+    if (isColorModeToggle) {
+      setColorMode(colorMode === "default" ? "dark" : "default")
     }
   }
+  const isBrowser = () =>
+    ![typeof window, typeof document].includes("undefined")
   return (
     <label
+      onClick={() =>
+        isBrowser && !isColorModeToggle ? (window.location.hash = title) : play()
+      }
       className={!isColorModeToggle && "hue-rotate"}
       sx={{
         display: "flex",
@@ -39,7 +47,6 @@ const isColorModeToggle = title == "🌞" || title == "🌕"
           top: "50%",
           transform: "translate(-50%, -50%)",
           zIndex: "-1",
-
         }}
       />
       <span
