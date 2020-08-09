@@ -32,7 +32,7 @@ const IndexPage = () => {
   }
   useEffect(() => {
     const page = isBrowser && window.location.hash.replace("#", "")
-    const btn = window?.document?.querySelector(`.${section}`)
+    const btn = window?.document?.querySelector(`.${section}`) ?? window?.document?.body;
     btn.focus()
     setSection(page || "about")
     return () => {}
