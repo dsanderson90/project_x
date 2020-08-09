@@ -4,7 +4,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container } from "theme-ui"
-import ClientOnly from "./ClientOnly";
 
 import Header from "./header"
 import Footer from "./Footer"
@@ -33,11 +32,9 @@ const Layout = ({ children }) => {
       maxWidth: "1200px",
     }}
     >
-    <ClientOnly>
       <Header siteTitle={title} description={description} />
       <main sx={{ flex: "1 0 auto" }}>{children}</main>
       <Footer />
-      </ClientOnly>
     </Container>
   )
 }

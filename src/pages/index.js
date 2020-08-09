@@ -8,6 +8,7 @@ import { isBrowser } from "../utils/shared"
 import Layout from "../components/layout"
 import RadioNav from "../components/RadioNav"
 import RadioNavButton from "../components/RadioNavButton"
+import ClientOnly from "../components/ClientOnly"
 import { Snippets } from "../components/Snippets"
 import { Blog } from "../components/Blog"
 import { About } from "../components/About"
@@ -57,6 +58,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <ClientOnly>
       <Flex
         mr={[null, null, null, "350px"]}
         sx={{ justifyContent: "flex-end" }}
@@ -71,6 +73,7 @@ const IndexPage = () => {
       </Fade>
       <RadioNav handleSetSection={handleSetSection} />
       {components[section]}
+      </ClientOnly>
     </Layout>
   )
 }
