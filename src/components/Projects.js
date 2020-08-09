@@ -10,9 +10,8 @@ export const Projects = () => {
       mirror: i % 2 == 0,
     }
     return (
-      <Fade delay={500} left {...mirror}>
+      <Fade delay={500} left key={project.id} {...mirror} >
         <ProjectCard
-          key={project.id}
           title={project.title}
           tags={project.tags}
           description={project.description}
