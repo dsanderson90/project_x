@@ -55,7 +55,7 @@ export const Snippets = () => {
           <span>😬</span>
         </h4>
       </Fade>
-      <Flex my={4}>
+      {/* <Flex my={4}>
       <Fade delay={1000}>
       <Button mx={2} as="a" variant="secondary" href="#html">
       HTML
@@ -71,14 +71,14 @@ export const Snippets = () => {
           CSS
           </Button>
           </Fade>
-          </Flex>
+          </Flex> */}
           
           <div sx={{ width: "100%" }}>
-          <Fade bottom delay={1800}>
+          {/* <Fade bottom delay={1800}> */}
           <Heading mt={4} id="html">
             HTML
           </Heading>
-          </Fade>
+          {/* </Fade> */}
           {html}
           <Heading mt={4} id="js">
             JavaScript
