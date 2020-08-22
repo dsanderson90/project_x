@@ -10,7 +10,8 @@ const Display = ({ children }) => {
         alignItems: "center",
         fontSize: ["18px", null, null, "20px"],
         margin: ["20px 40px", null, null, "30px 390px"],
-        padding: [null, null, null, "0 0 0 40px"]
+        padding: [null, null, null, "0 0 0 40px"],
+        scrollBehavior: "smooth"
       }}
     >
       {children}
