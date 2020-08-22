@@ -13,8 +13,8 @@ export const Snippets = () => {
     return () => {}
   }, [])
 
-  const handleClick = e =>
-    document.getElementById(e.target.name).scrollIntoView(true)
+  const handleClick = e => document.getElementById(e.target.name).scrollIntoView({behavior: "smooth"});
+
   const js = jsSnippets.map(el => (
     <Snippet
       key={el.id}
@@ -66,26 +66,26 @@ export const Snippets = () => {
             HTML
           </Button>
         </Fade>
-        <Fade delay={2000}>
-          <Button
-            as="a"
-            
-            mx={2}
-            name="css"
-            onClick={handleClick}
-          >
+        <Fade delay={1500}>
+          <Button as="a" mx={2} name="css" onClick={handleClick}>
             CSS
           </Button>
         </Fade>
-        <Fade delay={1500}>
-          <Button mx={2} as="a" name="js" variant="secondary" onClick={handleClick}>
+        <Fade delay={2000}>
+          <Button
+            mx={2}
+            as="a"
+            name="js"
+            variant="secondary"
+            onClick={handleClick}
+          >
             JS
           </Button>
         </Fade>
       </Flex>
 
       <div sx={{ width: "100%" }}>
-        <Fade bottom delay={1800}>
+        <Fade bottom delay={2200}>
           <Heading mt={4} id="html">
             HTML
           </Heading>
