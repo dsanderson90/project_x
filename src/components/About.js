@@ -10,12 +10,14 @@ export const About = ({ title, content }) => {
   return (
     <Fade bottom>
       <Display>
+        <div sx={{ margin: [null, null, null, "0 40px"]}}>
         <Jump delay={500}>
           <Swing delay={350}>
             <Heading as="h1">{title}</Heading>
           </Swing>
         </Jump>
-        <p sx={{ lineHeight: "body" }}>{content}</p>
+        <p sx={{ lineHeight: "body"}}>{content}</p>
+        </div>
       </Display>
     </Fade>
   )
