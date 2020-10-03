@@ -3,7 +3,15 @@ import { v4 as uuidv4 } from "uuid"
 export const projectsData = [
   {
     id: uuidv4(),
-    img: "github-user-lookup.JPG",
+    title: "tabata-time",
+    description:
+      "React Based Tabata Timer.",
+    // url: "http://tabata-time.surge.sh/",
+    repo: "https://github.com/dsanderson90/tabata-time", // if no repo, the button will not show up
+    tags: ["create-react-app", "emotion"],
+  },
+  {
+    id: uuidv4(),
     title: "gatsby-source-pokemons",
     description:
       "Source plugin for pulling pokemon data into your Gatsby project.",
@@ -13,7 +21,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: "github-user-lookup.JPG",
     title: "Github User Lookup",
     description:
       "A simple tool for looking up users by username on Github. The project was built using the Github API, create-react-app, tailwindcss, emotion, awesome-debounce-promise, and react-async-hook. The search input element uses a debounce function so that the API request is made 5 seconds after the user's last keystroke.",
@@ -23,7 +30,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: "github-user-lookup.JPG",
     title: "Rick and Morty API",
     description: "GraphQL API for serving Rick and Morty quotes.",
     url: "",
@@ -43,8 +49,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-
-    img: "notereaderscncap.jpg",
     title: "Note Reader 🎹",
     description:
       "Note Reader is a simple React app that helps you learn how to read sheet music. More features are currently in development.",
@@ -54,7 +58,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: "poke-ball(1).jpg",
     title: "Poké-Search",
     description:
       "Poké-Search is an application that allows users to search for their favorite Pokémon or for a group of Pokémons sorted by type. If the Pokémon exists, the user is presented with an animated sprite and stats of the corresponding Pokémon. If the sprite is expired, the user sees the Squirtle squad and an error notification. I built this project using React and the pokemons library available through npm.",
@@ -64,7 +67,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: "activatenm-landing.jpg",
     title: "Activate New Mexico Landing Page",
     description:
       "Landing page for forthcoming Activate NM website. The landing page was built using GatsbyJS and React ParticlesJS. The final site is being built in WordPress.",
@@ -74,7 +76,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: "activatenm-wp.JPG",
     title: "Activate New Mexico",
     description:
       "Activate New Mexico (ActivateNM) is an Albuquerque-based start-up incubator/accelerator powered by CNM Ingenuity. During my tenure as Resident Web Developer, I collaborated with Ruth Dove(Project Manager) and Adrian Tsosie(Graphic Designer) to redesign, rebrand, and revamp Activate NM's online presence with a new website built using WordPress.",
@@ -84,7 +85,6 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    img: "littlelions(1).jpg",
     title: "Little Lions Learn",
     description:
       "Little Lions Learn is an online language learning company that delivers high-quality, immersive second language instruction in Spanish and English for children between the ages of 4 and 13. I built this site as part of my residency at the start-up accelerator, ActivateNM. The site uses WordPress, the Genesis Framework and is integrated with Hubspot and WooCommerce.",
