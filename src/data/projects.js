@@ -6,7 +6,7 @@ export const projectsData = [
     title: "tabata-time",
     description:
       "React Based Tabata Timer.",
-    url: "http://tabata-time.surge.sh/",
+    url: "http://tabata-timer.surge.sh/",
     repo: "https://github.com/dsanderson90/tabata-time", // if no repo, the button will not show up
     tags: ["create-react-app", "emotion"],
   },
