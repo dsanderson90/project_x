@@ -83,7 +83,7 @@ export const htmlSnippets = [
 <a 
   href="https://example.com" 
   target="_blank" 
-  rel="noreferrer nooppener">
+  rel="noreferrer noopener">
   Link Name here
 </a>`,
     purpose: "",
