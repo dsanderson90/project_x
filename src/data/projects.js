@@ -5,7 +5,16 @@ export const projectsData = [
     id: uuidv4(),
     title: "use-is-clicked",
     description:
-      " a simple React hook that tracks whether an element or its descendant is clicked. This is useful for tracking a modal/dropdown state and enabling it to close if clicked away.",
+      "a simple React hook that tracks whether an element or its descendant is clicked. This is useful for tracking a modal/dropdown state and enabling it to close if clicked away.",
+    url: "http://note-writer.surge.sh",
+    repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
+    tags: ["npm", "react-hook"],
+  },
+  {
+    id: uuidv4(),
+    title: "react-typeracer",
+    description: 
+    "React typeracer.com clone",
     url: "http://note-writer.surge.sh",
     repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
     tags: ["npm-pkg", "react-hook"],
