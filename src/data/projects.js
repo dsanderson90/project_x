@@ -6,7 +6,6 @@ export const projectsData = [
     title: "use-is-clicked",
     description:
       "a simple React hook that tracks whether an element or its descendant is clicked. This is useful for tracking a modal/dropdown state and enabling it to close if clicked away.",
-    url: "http://note-writer.surge.sh",
     repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
     tags: ["npm", "react-hook"],
   },
@@ -15,16 +14,16 @@ export const projectsData = [
     title: "react-typeracer",
     description: 
     "React typeracer.com clone",
-    url: "http://note-writer.surge.sh",
-    repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
-    tags: ["npm-pkg", "react-hook"],
+    url: "http://typeracer-react.surge.sh",
+    repo: "https://github.com/d-sanderson/typeracer-react", // if no repo, the button will not show up
+    tags: ["create-react-app"],
   },
   {
     id: uuidv4(),
     title: "note-writer",
     description: "Write yer own sheet music.",
     url: "http://note-writer.surge.sh",
-    repo: "https://github.com/d-sanderson/notereader", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/notereader/tree/develop", // if no repo, the button will not show up
     tags: ["create-react-app"],
   },
   {
