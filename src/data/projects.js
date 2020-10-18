@@ -3,20 +3,27 @@ import { v4 as uuidv4 } from "uuid"
 export const projectsData = [
   {
     id: uuidv4(),
-    title: "note-writer",
+    title: "use-is-clicked",
     description:
-      "Write yer own sheet music.",
+      " a simple React hook that tracks whether an element or its descendant is clicked. This is useful for tracking a modal/dropdown state and enabling it to close if clicked away.",
     url: "http://note-writer.surge.sh",
-    repo: "https://github.com/dsanderson90/notereader", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
+    tags: ["npm-pkg", "react-hook"],
+  },
+  {
+    id: uuidv4(),
+    title: "note-writer",
+    description: "Write yer own sheet music.",
+    url: "http://note-writer.surge.sh",
+    repo: "https://github.com/d-sanderson/notereader", // if no repo, the button will not show up
     tags: ["create-react-app"],
   },
   {
     id: uuidv4(),
     title: "tabata-time",
-    description:
-      "React Based Tabata Timer.",
+    description: "React Based Tabata Timer.",
     url: "http://tabata-timer.netlify.app",
-    repo: "https://github.com/dsanderson90/tabata-time", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/tabata-time", // if no repo, the button will not show up
     tags: ["create-react-app", "emotion"],
   },
   {
@@ -25,7 +32,7 @@ export const projectsData = [
     description:
       "Source plugin for pulling pokemon data into your Gatsby project.",
     url: "http://pokemons-source-example.surge.sh/",
-    repo: "https://github.com/dsanderson90/gatsby-source-pokemons", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/gatsby-source-pokemons", // if no repo, the button will not show up
     tags: ["Gatsby", "GraphQL", "Tailwindcss"],
   },
   {
@@ -34,7 +41,7 @@ export const projectsData = [
     description:
       "A simple tool for looking up users by username on Github. The project was built using the Github API, create-react-app, tailwindcss, emotion, awesome-debounce-promise, and react-async-hook. The search input element uses a debounce function so that the API request is made 5 seconds after the user's last keystroke.",
     url: "http://github-user-lookup.netlify.app",
-    repo: "https://github.com/dsanderson90/github-user-lookup", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/github-user-lookup", // if no repo, the button will not show up
     tags: ["create-react-app", "classnames", "Tailwindcss"],
   },
   {
@@ -42,7 +49,7 @@ export const projectsData = [
     title: "Rick and Morty API",
     description: "GraphQL API for serving Rick and Morty quotes.",
     url: "",
-    repo: "https://github.com/dsanderson90/RMGQL.API", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/RMGQL.API", // if no repo, the button will not show up
     tags: ["C#", "ASP.NET", "GraphQL"],
   },
   {
@@ -53,7 +60,7 @@ export const projectsData = [
       "I got tired of configuring create-react-app with Emotion, TailwindCSS, Prettier, and Husky so I created a React starter that comes with these packages pre-configured.",
     url: "",
     repo:
-      "https://github.com/dsanderson90/create-react-app-emotion-tailwind-prettier", // if no repo, the button will not show up
+      "https://github.com/d-sanderson/create-react-app-emotion-tailwind-prettier", // if no repo, the button will not show up
     tags: ["create-react-app", "Tailwindcss"],
   },
   {
@@ -62,7 +69,7 @@ export const projectsData = [
     description:
       "Note Reader is a simple React app that helps you learn how to read sheet music. More features are currently in development.",
     url: "http://note-reader.surge.sh/",
-    repo: "https://github.com/dsanderson90/notereader", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/notereader", // if no repo, the button will not show up
     tags: ["create-react-app", "react-keyboard-event-handler"],
   },
   {
@@ -71,7 +78,7 @@ export const projectsData = [
     description:
       "Poké-Search is an application that allows users to search for their favorite Pokémon or for a group of Pokémons sorted by type. If the Pokémon exists, the user is presented with an animated sprite and stats of the corresponding Pokémon. If the sprite is expired, the user sees the Squirtle squad and an error notification. I built this project using React and the pokemons library available through npm.",
     url: "http://poke-search-ds.surge.sh/",
-    repo: "https://github.com/dsanderson90/pokesearch", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/pokesearch", // if no repo, the button will not show up
     tags: ["create-react-app", "pokemons"],
   },
   {
@@ -80,7 +87,7 @@ export const projectsData = [
     description:
       "Landing page for forthcoming Activate NM website. The landing page was built using GatsbyJS and React ParticlesJS. The final site is being built in WordPress.",
     url: "http://kindly-note.surge.sh/",
-    repo: "https://github.com/dsanderson90/under-construction-activatenm", // if no repo, the button will not show up
+    repo: "https://github.com/d-sanderson/under-construction-activatenm", // if no repo, the button will not show up
     tags: ["Gatsby", "gatsby themes"],
   },
   {
