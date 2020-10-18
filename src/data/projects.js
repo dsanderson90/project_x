@@ -3,6 +3,15 @@ import { v4 as uuidv4 } from "uuid"
 export const projectsData = [
   {
     id: uuidv4(),
+    title: "note-writer",
+    description:
+      "Write yer own sheet music.",
+    url: "http://note-writer.surge.sh",
+    repo: "https://github.com/dsanderson90/notereader", // if no repo, the button will not show up
+    tags: ["create-react-app"],
+  },
+  {
+    id: uuidv4(),
     title: "tabata-time",
     description:
       "React Based Tabata Timer.",
