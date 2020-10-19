@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link, Box, Button } from "theme-ui"
@@ -8,10 +8,17 @@ import heartBeat from "../utils/sounds/heartbeat.mp3"
 import HitCounter from "./HitCounter"
 
 const Footer = () => {
+  const [slug, setSlug] = useState("")
   const [play, { stop }] = useSound(heartBeat, { volume: 0.2 })
-  const url = typeof window !== 'undefined' ? window.location.href : '';
-  let regex = new RegExp(/\#(.*)/, 'gi')
-let slug = url.match(regex) || '/'
+  useEffect(() => {
+    const url = typeof window !== "undefined" ? window.location.href : ""
+    let regex = new RegExp(/\#(.*)/, "gi")
+    setSlug(url.match(regex)|| '/')
+    console.log(slug)
+    return () => {
+    }
+  }, [slug])
+
   return (
     <footer
       sx={{
@@ -55,9 +62,14 @@ let slug = url.match(regex) || '/'
         </Box>
       </Fade>
       <Fade big delay={2600}>
-        <Box mt={4}>
+        <Box mt={4} mb={2}>
           Developed with{" "}
-          <span role="img" aria-label="heart-emoji" onMouseOver={play} onMouseOut={stop}>
+          <span
+            role="img"
+            aria-label="heart-emoji"
+            onMouseOver={play}
+            onMouseOut={stop}
+          >
             💖
           </span>{" "}
           by{" "}
@@ -71,7 +83,7 @@ let slug = url.match(regex) || '/'
           </Link>
         </Box>
       </Fade>
-      <HitCounter slug={slug}/>
+      <HitCounter slug={slug[0] ? slug[0] : "/"} size={20} />
     </footer>
   )
 }
