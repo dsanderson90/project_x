@@ -9,7 +9,7 @@ export default function HitCounter({ slug }) {
     }
     // Invoke the function by making a request.
     // Update the URL to match the format of your platform.
-    fetch(`/api/register-hit?slug=${slug}`)
+    fetch(`/.netlify/functions/register-hit?slug=${slug}`)
       .then((res) => res.json())
       .then((json) => {
         if (typeof json.hits === 'number') {
