@@ -20,5 +20,5 @@ export default function HitCounter({ slug }) {
   if (typeof hits === 'undefined') {
     return null;
   }
-  return <RetroHitCounter hits={hits || 0} />;
+  return <RetroHitCounter hits={hits} />;
 }

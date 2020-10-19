@@ -11,8 +11,7 @@ const Footer = () => {
   const [play, { stop }] = useSound(heartBeat, { volume: 0.2 })
   const url = typeof window !== 'undefined' ? window.location.href : '';
   let regex = new RegExp(/\#(.*)/, 'gi')
-let slug = url.match(regex)[0] || '/'
-console.log(slug)
+let slug = url.match(regex) || '/'
   return (
     <footer
       sx={{
