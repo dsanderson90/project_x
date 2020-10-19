@@ -57,7 +57,7 @@ const IndexPage = () => {
   }
 
   return (
-    <Layout>
+    <Layout section={section}>
       <Flex
         mr={[null, null, null, "350px"]}
         sx={{ justifyContent: "flex-end" }}

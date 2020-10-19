@@ -7,17 +7,11 @@ import useSound from "use-sound"
 import heartBeat from "../utils/sounds/heartbeat.mp3"
 import HitCounter from "./HitCounter"
 
-const Footer = () => {
-  const [slug, setSlug] = useState("")
+const Footer = ( { section }) => {
+  console.log(section)
+  const [slug, setSlug] = useState("/")
   const [play, { stop }] = useSound(heartBeat, { volume: 0.2 })
-  useEffect(() => {
-    const url = typeof window !== "undefined" ? window.location.href : ""
-    let regex = new RegExp(/\#(.*)/, "gi")
-    setSlug(url.match(regex)|| '/')
-    console.log(slug)
-    return () => {
-    }
-  }, [slug])
+ 
 
   return (
     <footer
@@ -62,7 +56,7 @@ const Footer = () => {
         </Box>
       </Fade>
       <Fade big delay={2600}>
-        <Box mt={4} mb={2}>
+        <Box mt={4}>
           Developed with{" "}
           <span
             role="img"
@@ -83,7 +77,7 @@ const Footer = () => {
           </Link>
         </Box>
       </Fade>
-      <HitCounter slug={slug[0] ? slug[0] : "/"} size={20} />
+      <HitCounter slug={section} />
     </footer>
   )
 }

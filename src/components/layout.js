@@ -8,7 +8,7 @@ import ClientOnly from "./ClientOnly";
 
 import Header from "./header"
 import Footer from "./Footer"
-const Layout = ({ children }) => {
+const Layout = ({ children, section }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
     <ClientOnly>
       <Header siteTitle={title} description={description} />
       <main sx={{ flex: "1 0 auto" }}>{children}</main>
-      <Footer />
+      <Footer section={section}/>
       </ClientOnly>
     </Container>
   )
