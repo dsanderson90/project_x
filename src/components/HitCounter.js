@@ -1,6 +1,6 @@
-// src/components/HitCounter
+import React from "react"
 import RetroHitCounter from 'react-retro-hit-counter';
-function HitCounter({ slug }) {
+export default function HitCounter({ slug }) {
   const [hits, setHits] = React.useState(undefined);
   React.useEffect(() => {
     // Don't count hits on localhost
@@ -20,5 +20,5 @@ function HitCounter({ slug }) {
   if (typeof hits === 'undefined') {
     return null;
   }
-  return <RetroHitCounter hits={hits} />;
+  return <RetroHitCounter hits={hits || 0} />;
 }

@@ -1,14 +1,18 @@
+import React from "react"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
 import { Link, Box, Button } from "theme-ui"
 import Fade from "react-reveal/Fade"
 import useSound from "use-sound"
 import heartBeat from "../utils/sounds/heartbeat.mp3"
+import HitCounter from "./HitCounter"
 
 const Footer = () => {
   const [play, { stop }] = useSound(heartBeat, { volume: 0.2 })
-
+  const url = typeof window !== 'undefined' ? window.location.href : '';
+  let regex = new RegExp(/\#(.*)/, 'gi')
+let slug = url.match(regex)[0] || '/'
+console.log(slug)
   return (
     <footer
       sx={{
@@ -68,6 +72,7 @@ const Footer = () => {
           </Link>
         </Box>
       </Fade>
+      <HitCounter slug={slug}/>
     </footer>
   )
 }
