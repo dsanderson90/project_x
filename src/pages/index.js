@@ -10,9 +10,6 @@ import RadioNav from "../components/RadioNav"
 import RadioNavButton from "../components/RadioNavButton"
 import { Snippets } from "../components/Snippets"
 import { Blog, About, Resume, Projects } from "../components/Sections"
-// import { About } from "../components/About"
-// import { Resume } from "../components/Resume"
-// import { Projects } from "../components/Projects"
 
 const IndexPage = () => {
   const [colorMode] = useColorMode()
