@@ -5,16 +5,18 @@ import { Flex, Box } from "theme-ui"
 import Fade from "react-reveal/Fade"
 import { useColorMode } from "theme-ui"
 import { isBrowser } from "../utils/shared"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import RadioNav from "../components/RadioNav"
 import RadioNavButton from "../components/RadioNavButton"
 import { Snippets } from "../components/Snippets"
-import { Blog } from "../components/Blog"
-import { About } from "../components/About"
-import { Resume } from "../components/Resume"
-import { Projects } from "../components/Projects"
+import { Blog, About, Resume, Projects } from "../components/Sections"
+// import { About } from "../components/About"
+// import { Resume } from "../components/Resume"
+// import { Projects } from "../components/Projects"
+
 const IndexPage = () => {
   const [colorMode] = useColorMode()
+
   const [components] = useState({
     about: (
       <About
@@ -30,6 +32,7 @@ const IndexPage = () => {
   const handleSetSection = title => {
     setSection(title)
   }
+  
   useEffect(() => {
     const page = isBrowser && window.location.hash.replace("#", "")
     const btn = window?.document?.querySelector(`.${section}`) ?? window?.document?.body;
@@ -38,6 +41,7 @@ const IndexPage = () => {
     return () => {}
   }, [handleSetSection])
   const [section, setSection] = useState()
+
   const containerStyles = {
     color: "text",
     justifyContent: "center",

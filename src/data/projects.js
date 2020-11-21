@@ -1,14 +1,14 @@
 import { v4 as uuidv4 } from "uuid"
 
 export const projectsData = [
-  {
-    id: uuidv4(),
-    title: "use-is-clicked",
-    description:
-      "a simple React hook that tracks whether an element or its descendant is clicked. This is useful for tracking a modal/dropdown state and enabling it to close if clicked away.",
-    repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
-    tags: ["npm", "react-hook"],
-  },
+  // {
+  //   id: uuidv4(),
+  //   title: "use-is-clicked",
+  //   description:
+  //     "a simple React hook that tracks whether an element or its descendant is clicked. This is useful for tracking a modal/dropdown state and enabling it to close if clicked away.",
+  //   repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
+  //   tags: ["npm", "react-hook"],
+  // },
   {
     id: uuidv4(),
     title: "react-typeracer",

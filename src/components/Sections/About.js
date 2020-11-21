@@ -3,10 +3,10 @@ import React from "react"
 import { jsx, Heading } from "theme-ui"
 import Jump from "react-reveal/Jump"
 import Swing from "react-reveal/Swing"
-import Display from "./Display"
+import Display from "../Display"
 import Fade from "react-reveal/Fade"
 
-export const About = ({ title, content }) => {
+const About = ({ title, content }) => {
   return (
     <Fade bottom>
       <Display>
@@ -22,3 +22,5 @@ export const About = ({ title, content }) => {
     </Fade>
   )
 }
+export default About
+

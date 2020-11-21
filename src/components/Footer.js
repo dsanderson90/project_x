@@ -3,15 +3,14 @@ import React, { useState, useEffect } from "react"
 import { jsx } from "theme-ui"
 import { Link, Box, Button } from "theme-ui"
 import Fade from "react-reveal/Fade"
+import Wobble from "react-reveal/Wobble"
 import useSound from "use-sound"
 import heartBeat from "../utils/sounds/heartbeat.mp3"
 import HitCounter from "./HitCounter"
 
-const Footer = ( { section }) => {
-  console.log(section)
+const Footer = ({ section }) => {
   const [slug, setSlug] = useState("/")
   const [play, { stop }] = useSound(heartBeat, { volume: 0.2 })
- 
 
   return (
     <footer
@@ -55,7 +54,7 @@ const Footer = ( { section }) => {
           </Link>
         </Box>
       </Fade>
-      <Fade big delay={2600}>
+      <Fade big delay={2500}>
         <Box mt={4}>
           Developed with{" "}
           <span
@@ -77,7 +76,9 @@ const Footer = ( { section }) => {
           </Link>
         </Box>
       </Fade>
-      <HitCounter slug={section} />
+      <Fade delay={3000}>
+        <HitCounter slug={section} />
+      </Fade>
     </footer>
   )
 }

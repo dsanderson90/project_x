@@ -1,10 +1,10 @@
+import React from "react"
 /** @jsx jsx */
 import { jsx, Heading } from "theme-ui"
-import React from "react"
-import Display from "./Display"
+import Display from "../Display"
 import Fade from "react-reveal/Fade"
 
-export const Blog = () => (
+const Blog = () => (
   <Display>
     <Fade delay={250} top>
       <Heading>Blog</Heading>
@@ -17,3 +17,4 @@ export const Blog = () => (
     </Fade>
   </Display>
 )
+export default Blog

@@ -4,7 +4,6 @@ import React from "react"
 import RetroHitCounter from "react-retro-hit-counter"
 export default function HitCounter({ slug }) {
   const [hits, setHits] = React.useState(undefined)
-  console.log(slug)
   React.useEffect(() => {
     // Don't count hits on localhost
     if (process.env.NODE_ENV !== 'production') {
@@ -28,7 +27,7 @@ export default function HitCounter({ slug }) {
         margin: "20px 0",
       }}
     >
-      <RetroHitCounter hits={hits} size={20} />
+      <RetroHitCounter hits={hits || 2} size={20} />
     </div>
   )
 }

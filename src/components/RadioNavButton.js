@@ -26,6 +26,7 @@ const RadioNavButton = ({ title, handleSetSection }) => {
       }
       className={!isColorModeToggle && "hue-rotate "}
       sx={{
+        fontWeight: "700",
         display: "flex",
         justifyContent: "flex-start",
         alignItems: "center",

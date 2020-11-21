@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Container } from "theme-ui"
 import ClientOnly from "./ClientOnly";
 
-import Header from "./header"
+import Header from "./Header"
 import Footer from "./Footer"
 const Layout = ({ children, section }) => {
   const data = useStaticQuery(graphql`

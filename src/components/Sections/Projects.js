@@ -1,10 +1,10 @@
 import React from "react"
-import Display from "./Display"
+import Display from "../Display"
 import Fade from "react-reveal/Fade"
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "../ProjectCard"
 import { Heading } from "theme-ui"
-import { projectsData } from "../data/projects"
-export const Projects = () => {
+import { projectsData } from "../../data/projects"
+const Projects = () => {
   const projects = projectsData.map((project, i) => {
     let mirror = {
       mirror: i % 2 == 0,
@@ -30,3 +30,4 @@ export const Projects = () => {
     </Display>
   )
 }
+export default Projects
