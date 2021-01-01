@@ -2,11 +2,11 @@
 import { jsx, Flex, Button, Heading } from "theme-ui"
 import React, { useEffect } from "react"
 import Prism from "prismjs"
-import Display from "./Display"
+import Display from "../Display"
 import Fade from "react-reveal/Fade"
-import { jsSnippets, cssSnippets, htmlSnippets } from "../data/snippets"
-import Snippet from "./Snippet"
-export const Snippets = () => {
+import { jsSnippets, cssSnippets, htmlSnippets } from "../../data/snippets"
+import Snippet from "../Snippet"
+const Snippets = () => {
   useEffect(() => {
     // call the highlightAll() function to style our code blocks
     Prism.highlightAll()
@@ -103,3 +103,4 @@ export const Snippets = () => {
     </Display>
   )
 }
+export default Snippets

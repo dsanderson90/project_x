@@ -8,8 +8,7 @@ import { isBrowser } from "../utils/shared"
 import Layout from "../components/Layout"
 import RadioNav from "../components/RadioNav"
 import RadioNavButton from "../components/RadioNavButton"
-import { Snippets } from "../components/Snippets"
-import { Blog, About, Resume, Projects } from "../components/Sections"
+import { Blog, About, Resume, Projects, Snippets } from "../components/sections"
 
 const IndexPage = () => {
   const [colorMode] = useColorMode()
