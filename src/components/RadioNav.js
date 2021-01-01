@@ -3,7 +3,8 @@ import React from "react"
 import { jsx, Flex } from "theme-ui"
 import "./RadioNav.css"
 import RadioNavButton from "./RadioNavButton"
-const RadioNav = ({ handleSetSection }) => {
+const RadioNav = ({ handleSetSection, sections }) => {
+  let t = sections.map(el => <RadioNavButton handleSetSection={handleSetSection} title={el} />)
   return (
     <>
       <Flex
@@ -19,17 +20,7 @@ const RadioNav = ({ handleSetSection }) => {
           }}
           className="dark"
         >
-          <RadioNavButton handleSetSection={handleSetSection} title="about" />
-          <RadioNavButton
-            handleSetSection={handleSetSection}
-            title="projects"
-          />
-          <RadioNavButton handleSetSection={handleSetSection} title="blog" />
-          <RadioNavButton
-            handleSetSection={handleSetSection}
-            title="snippets"
-          />
-          <RadioNavButton handleSetSection={handleSetSection} title="resume" />
+          {t}
         </section>
       </Flex>
 

@@ -22,17 +22,18 @@ const IndexPage = () => {
       />
     ),
     projects: <Projects />,
-    resume: <Resume />,
     blog: <Blog />,
     snippets: <Snippets />,
+    resume: <Resume />,
   })
   const handleSetSection = title => {
     setSection(title)
   }
-  
+
   useEffect(() => {
     const page = isBrowser && window.location.hash.replace("#", "")
-    const btn = window?.document?.querySelector(`.${section}`) ?? window?.document?.body;
+    const btn =
+      window?.document?.querySelector(`.${section}`) ?? window?.document?.body
     btn.focus()
     setSection(page || "about")
     return () => {}
@@ -71,7 +72,10 @@ const IndexPage = () => {
       <Fade bottom>
         <Box sx={titleStyles}>Software Developer</Box>
       </Fade>
-      <RadioNav handleSetSection={handleSetSection} />
+      <RadioNav
+        handleSetSection={handleSetSection}
+        sections={Object.keys(components)}
+      />
       {components[section]}
     </Layout>
   )
