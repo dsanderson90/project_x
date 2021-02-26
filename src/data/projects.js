@@ -1,14 +1,37 @@
 import { v4 as uuidv4 } from "uuid"
 
 export const projectsData = [
-  // {
-  //   id: uuidv4(),
-  //   title: "use-is-clicked",
-  //   description:
-  //     "a simple React hook that tracks whether an element or its descendant is clicked. This is useful for tracking a modal/dropdown state and enabling it to close if clicked away.",
-  //   repo: "https://github.com/d-sanderson/use-is-clicked", // if no repo, the button will not show up
-  //   tags: ["npm", "react-hook"],
-  // },
+  {
+    id: uuidv4(),
+    title: "precision",
+    description:
+      "A Webscaper that will scrape PR Newswire for Press Releases related to certain keywords",
+    repo: "https://github.com/d-sanderson/precision", // if no repo, the button will not show up
+    tags: ["puppeteer", "node"],
+  },
+  {
+    id: uuidv4(),
+    title: "us-places-to-visit",
+    url: "http://tabata-timer.netlify.app",
+    repo: "https://github.com/d-sanderson/whereto-react", // if no repo, the button will not show up
+    tags: ["nextjs", "leaflet", "hasura"],
+  },
+  {
+    id: uuidv4(),
+    title: "tabata-time",
+    description: "React Based Tabata Timer.",
+    url: "http://tabata-timer.netlify.app",
+    repo: "https://github.com/d-sanderson/tabata-time", // if no repo, the button will not show up
+    tags: ["create-react-app", "emotion"],
+  },
+  {
+    id: uuidv4(),
+    title: "whereto react",
+    description: "React Based Tabata Timer.",
+    url: "http://tabata-timer.netlify.app",
+    repo: "https://github.com/d-sanderson/whereto-react", // if no repo, the button will not show up
+    tags: ["create-react-app", "google-maps-api", "mongoose"],
+  },
   {
     id: uuidv4(),
     title: "react-typeracer",
@@ -25,14 +48,6 @@ export const projectsData = [
     url: "http://note-writer.surge.sh",
     repo: "https://github.com/d-sanderson/notereader/tree/develop", // if no repo, the button will not show up
     tags: ["create-react-app"],
-  },
-  {
-    id: uuidv4(),
-    title: "tabata-time",
-    description: "React Based Tabata Timer.",
-    url: "http://tabata-timer.netlify.app",
-    repo: "https://github.com/d-sanderson/tabata-time", // if no repo, the button will not show up
-    tags: ["create-react-app", "emotion"],
   },
   {
     id: uuidv4(),
