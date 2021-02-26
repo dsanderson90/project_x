@@ -12,7 +12,6 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: "us-places-to-visit",
-    url: "http://tabata-timer.netlify.app",
     repo: "https://github.com/d-sanderson/whereto-react", // if no repo, the button will not show up
     tags: ["nextjs", "leaflet", "hasura"],
   },
@@ -27,7 +26,8 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: "whereto react",
-    description: "React Based Tabata Timer.",
+    description:
+      "This application provides users with travel distance and duration data based their origin, destination, and method of travel. Each trip query is saved to a database and rendered back to the user and they are presented with a list of previously searched locations.",
     url: "http://tabata-timer.netlify.app",
     repo: "https://github.com/d-sanderson/whereto-react", // if no repo, the button will not show up
     tags: ["create-react-app", "google-maps-api", "mongoose"],
@@ -35,8 +35,7 @@ export const projectsData = [
   {
     id: uuidv4(),
     title: "react-typeracer",
-    description: 
-    "React typeracer.com clone",
+    description: "React typeracer.com clone",
     url: "http://typeracer-react.surge.sh",
     repo: "https://github.com/d-sanderson/typeracer-react", // if no repo, the button will not show up
     tags: ["create-react-app"],
