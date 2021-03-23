@@ -6,28 +6,30 @@ export default function HitCounter({ slug }) {
   const [hits, setHits] = React.useState(undefined)
   React.useEffect(() => {
     // Don't count hits on localhost
-    if (process.env.NODE_ENV !== 'production') {
-      return;
-    }    // Invoke the function by making a request.
+    // if (process.env.NODE_ENV !== 'production') {
+    //   return;
+    // }    // Invoke the function by making a request.
     // Update the URL to match the format of your platform.
     fetch(`/.netlify/functions/register-hit?slug=${slug}`)
       .then(res => res.json())
       .then(json => {
-        if (typeof json.hits === "number") {
+        console.log(json)
+        // if (typeof json.hits === "number") {
           setHits(json.hits)
-        }
+        // }
       })
   }, [slug])
-  if (typeof hits === "undefined") {
-    return null
-  }
+  // if (typeof hits === "undefined") {
+  //   return null
+  // }
   return (
     <div
       sx={{
         margin: "20px 0",
       }}
     >
-      <RetroHitCounter hits={hits || 2} size={20} />
+      {hits}
+      <RetroHitCounter hits={hits || 251} size={20} />
     </div>
   )
 }
