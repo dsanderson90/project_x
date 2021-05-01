@@ -77,7 +77,7 @@ const Footer = ({ section }) => {
         </Box>
       </Fade>
       <Fade delay={3000}>
-        <HitCounter slug={section} />
+        {/* <HitCounter slug={section} /> */}
       </Fade>
     </footer>
   )
