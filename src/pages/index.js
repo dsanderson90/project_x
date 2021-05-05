@@ -22,7 +22,7 @@ const IndexPage = () => {
     ),
     projects: <Projects />,
     blog: <Blog />,
-    snippets: <Snippets />,
+    // snippets: <Snippets />,
     resume: <Resume />,
   })
   const handleSetSection = title => {
